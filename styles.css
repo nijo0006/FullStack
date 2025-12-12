@@ -255,6 +255,13 @@ header punkter
     font-size: 20px;
 }
 
+.text-box1 p:hover,
+.text-box2 p:hover,
+.text-box3 p:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
 .info {
     padding-top: 20px;
     font-size: 12px;
