@@ -644,6 +644,7 @@ INFO
     width: 140px;
     border-radius: 10px;
     flex-shrink: 0;            /** Prevents distortion */
+    padding-bottom: 10px;
 }
 
 /* --- MARKER DOT --- */
@@ -695,13 +696,13 @@ INFO
     display: inline-block;                      /** Fit-to-content box */
     background: rgb(0, 56, 168);
     color: rgba(217, 221, 255);
-    padding: 30px 48px;
+    padding: 20px 18px;
     border-radius: 8px;
     margin-bottom: 15px;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 25px;
-    letter-spacing: 1px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
 }
 
 /* --- IMAGE + TITLE LAYOUT ---- */
@@ -714,15 +715,16 @@ INFO
 
 /** Smaller version of timeline image (inside title row) */
 .title-row .timeline-img {
-    width: 85px;
+    width: 110px;
     height: auto;
     border-radius: 10px;
     flex-shrink: 0;           /** Prevents deformation */
 }
 
 
-/*------Rollemodeller + videoer-------*/
-
+/*-----------------------
+ Rollemodeller + videoer
+ ------------------------*/
 
 /*------ Sektionen ------*/
 .women-in-it-education {
