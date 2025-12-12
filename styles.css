@@ -386,10 +386,10 @@ INFO
 
 .chart-container {
     display: flex;
-    justify-content: space-between; /* lige afstand mellem charts */
-    gap: 20px; /* afstand mellem charts */
+    justify-content: space-between;
+    gap: 20px;
     padding: 20px 100px 100px 100px;
-    align-items: flex-start; /* top-alignment */
+    align-items: flex-start;
     border-radius: 12px;
     flex-wrap: nowrap; /* holder dem på én linje */
     overflow-x: auto;
@@ -397,7 +397,7 @@ INFO
 
 .charts-box {
     background-color: #fcebf9;
-    flex-wrap: nowrap; /* holder dem på én linje */
+    flex-wrap: nowrap;
     overflow-x: auto; /* scroll hvis for smal skærm */
 }
 
@@ -406,7 +406,7 @@ INFO
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px; /* fast bredde */
+    width: 250px;
     min-width: 250px;
 }
 
@@ -437,10 +437,19 @@ INFO
     background-position: center;
     background-repeat: no-repeat;
 }
+.female-percentage {
+    margin-top: 15px;
+    font-size: 15px;
+    color: deeppink;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
 
 /* Farver */
 .gender-icon.female {
-    background-image: url('../photos/pink-icon.png'); /* evt. SVG */
+    background-image: url('../photos/pink-icon.png');
 }
 
 .gender-icon.male {

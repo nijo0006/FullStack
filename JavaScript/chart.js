@@ -50,14 +50,8 @@ let genderChart, applicantsChart;
 // Funktion til at vise charts
 function showCharts(key) {
     const data = uddannelser[key];
-    renderGenderGrid(data.gender.Kvinder);
 
-    // vis chart-sektionen
-    document.getElementById("charts").style.display = "block";
-    document.getElementById("chart-title").textContent = data.name;
-
-    // Kønsfordeling
-
+    // Flyttet funktion op før den kaldes
     function renderGenderGrid(percentage) {
         const grid = document.getElementById('genderGrid');
         grid.innerHTML = ""; // ryd grid
@@ -66,14 +60,18 @@ function showCharts(key) {
         const femaleCount = Math.round(totalIcons * (percentage / 100));
         const maleCount = totalIcons - femaleCount;
 
-        // Tilføj female ikoner
+        // Skriv procent
+        const femalePercentageEl = document.getElementById("femalePercentage");
+        femalePercentageEl.textContent = percentage + "% kvinder";
+
+        // Female ikoner
         for (let i = 0; i < femaleCount; i++) {
             const icon = document.createElement("div");
             icon.classList.add("gender-icon", "female");
             grid.appendChild(icon);
         }
 
-        // Tilføj male ikoner
+        // Male ikoner
         for (let i = 0; i < maleCount; i++) {
             const icon = document.createElement("div");
             icon.classList.add("gender-icon", "male");
@@ -81,12 +79,19 @@ function showCharts(key) {
         }
     }
 
-    // Adgangskvotient som tal
+    // Nu virker det ✔️
+    renderGenderGrid(data.gender.Kvinder);
+
+    document.getElementById("charts").style.display = "block";
+    document.getElementById("chart-title").textContent = data.name;
+
+    // Adgangskvotient
     const kvotientEl = document.getElementById("admissionValue");
-    kvotientEl.textContent = data.adgang[0].kvotient > 0 ? data.adgang[0].kvotient : "Alle optaget";
-
-
+    kvotientEl.textContent = data.adgang[0].kvotient > 0
+        ? data.adgang[0].kvotient
+        : "Alle optaget";
 }
+
 
 // Bind klik til bobler, når DOM er loaded
 document.addEventListener("DOMContentLoaded", () => {
