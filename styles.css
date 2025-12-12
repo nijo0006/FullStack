@@ -1038,6 +1038,7 @@ INFO
     color: rgb(0, 56, 168);
     white-space: normal;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .education-logo img {
@@ -1049,12 +1050,14 @@ INFO
 }
 
 .uddannelser-liste {
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    top: 140px;
+    left: 30px;
+    right: 30px;
     font-size: 12px;
-    padding-left: 18px;
-    width: 90%;
     color: black;
+    margin: 0;
+    padding-left: 16px;
 }
 
 .uddannelser-liste li {
