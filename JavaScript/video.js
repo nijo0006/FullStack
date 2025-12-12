@@ -1,21 +1,23 @@
-/*Note: Find alle elementer med klassen .role-video-wrapper*/
+/* Find alle video-containere */
+const videoContainers = document.querySelectorAll(".video-container");
 
-const roleVideoWrappers = document.querySelectorAll(".role-video-wrapper");
+videoContainers.forEach(function (container) {
 
-roleVideoWrappers.forEach(function (wrapper) { /*Note: Gå igennem (forEach) hver enkelt wrapper (én video ad gangen)*/
-    const video = wrapper.querySelector(".role-video"); /*Note: Find video-elementet og play-knappen inde i kortet*/
-    const button = wrapper.querySelector(".play-button");
+    const video = container.querySelector(".video");       // selve videoen
+    const button = container.querySelector(".play-button"); // play-knappen
 
-    if (!video || !button) return; /*Note: (for sikkerhed) --> Hvis video eller knap mangler → spring over*/
+    if (!video || !button) return; // sikkerhed
 
-    video.controls = false; /*Note: Slå kontroller fra i starten --> Videoen viser ikke pause/play før man klikker, men den store hvide cirkel-play-knap*/
+    // Skjul videokontroller indtil man klikker
+    video.controls = false;
 
     function startVideo() {
-        video.controls = true; // Vis kontroller
-        video.play(); // Start videoen
-        button.style.display = "none"; // Skjul play-knappen
+        video.controls = true;      // vis kontroller
+        video.play();               // start video
+        button.style.display = "none"; // skjul knappen
     }
 
-    wrapper.addEventListener("click", startVideo); /*Når du klikker på kortet eller knappen --> kør startVideo()*/
+    // Klik på både container og knap → start video
+    container.addEventListener("click", startVideo);
     button.addEventListener("click", startVideo);
 });
