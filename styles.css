@@ -752,78 +752,66 @@ INFO
  Rollemodeller + videoer
  ------------------------*/
 
-/*------ Sektionen ------*/
-.women-in-it-education {
-    padding: 60px 0;
+/*------Rollemodeller + videoer-------*/
+
+.women-in-IT{
+    padding: 60px;
     background: #e8e8ff;
 }
 
-.women-in-it-education h2 {
+.video-students-container, .video-workers-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px;
+}
+
+.women-in-IT h2{
     text-align: center;
     font-size: 28px;
-    color: #0038a8; /* blå tekst */
-    margin-bottom: 40px;
-}
-
-/*------ Rækken med 3 rollemodeller ------*/
-.role-row {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 40px;
-}
-
-/*------ Kortet ------*/
-.role-card {
-    background: transparent;
-    display: flex;
-    flex-direction: column;
     color: rgb(0, 56, 168);
-    padding-bottom: 4px;
-    border-bottom: 2px solid rgb(0, 56, 168);
-    width: 432px;
-}
-
-/* Titel + navn */
-.role-card h3 {
-    font-size: 15px;
-    font-weight: 500;
-    margin: 0;
-    color: rgb(0, 56, 168);
-    padding-bottom: 4px;
-    border-bottom: 2px solid rgb(0, 56, 168);
     font-style: italic;
+    font-weight: 500;
 }
 
-.role-name {
-    font-size: 17px;
-    margin-bottom: 10px;
-    font-weight: 600;
+.women-in-IT h3{
+    font-size: 20px;
+    font-weight: 500;
     color: rgb(0, 56, 168);
+    border-bottom: solid;
+    margin-bottom: 25px;
 }
 
-/* Den blå streg under tekst */
-.role-text-line {
-    width: 100%;
-    height: 2px;
-    background: rgb(0, 56, 168);
-    margin: 10px 0 12px 0;
+.women-in-IT p{
+    color: rgb(0, 56, 168);
+    border-bottom: solid;
+    margin-bottom: 25px;
 }
 
-/*------ Video wrapper ------*/
-.role-video-wrapper {
+.video-container{
     position: relative;
-    width: 100%;
+    width: 260px;          /* ens bredde på alle videoer */
+    overflow: hidden;      /* gem det der stikker udenfor */
 }
 
-.role-video {
+/*selve videon*/
+.video{
     width: 100%;
     object-fit: cover;
-    height: 612px;
-
+    height: 100%;
+    position: relative;     /* gør at knappen kan ligge ovenpå videoen */
+    cursor: pointer;
 }
 
-/* Play-knap */
+.amalie-video {
+    object-fit: cover;
+    height: 612px;
+    transform: scale(1.1);   /* zoom lidt ind */
+    width: 100%;
+}
+
+/*Play-knap*/
 .play-button {
     position: absolute;
     top: 50%;
@@ -839,10 +827,11 @@ INFO
     justify-content: center;
 }
 
+/*Trekanten inde i knappen*/
 .play-button::before {
     content: "";
     border-style: solid;
-    border-width: 14px 0 14px 22px;
+    border-width: 10px 0 10px 18px;
     border-color: transparent transparent transparent #555;
 }
 
