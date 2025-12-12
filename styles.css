@@ -753,20 +753,20 @@ INFO
  ------------------------*/
 
 /*------Rollemodeller + videoer-------*/
-
 .women-in-IT{
     padding: 60px;
     background: #e8e8ff;
 }
 
-.video-students-container, .video-workers-container{
+.video-students-container,
+.video-workers-container{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 60px;
     padding: 60px;
 }
 
+/* TITLER */
 .women-in-IT h2{
     text-align: center;
     font-size: 28px;
@@ -789,29 +789,22 @@ INFO
     margin-bottom: 25px;
 }
 
+/* VIDEOER – DEN ENKLE LØSNING */
 .video-container{
     position: relative;
-    width: 260px;          /* ens bredde på alle videoer */
-    overflow: hidden;      /* gem det der stikker udenfor */
+    width: 260px;       /* Ens bredde */
+    height: 450px;      /* Ens højde */
+    overflow: hidden;   /* Beskær videoen */
 }
 
-/*selve videon*/
 .video{
     width: 100%;
-    object-fit: cover;
     height: 100%;
-    position: relative;     /* gør at knappen kan ligge ovenpå videoen */
+    object-fit: cover;  /* Gør alle videoer samme størrelse */
     cursor: pointer;
 }
 
-.amalie-video {
-    object-fit: cover;
-    height: 612px;
-    transform: scale(1.1);   /* zoom lidt ind */
-    width: 100%;
-}
-
-/*Play-knap*/
+/* PLAY-KNAPPEN */
 .play-button {
     position: absolute;
     top: 50%;
@@ -827,14 +820,12 @@ INFO
     justify-content: center;
 }
 
-/*Trekanten inde i knappen*/
 .play-button::before {
     content: "";
     border-style: solid;
     border-width: 10px 0 10px 18px;
     border-color: transparent transparent transparent #555;
 }
-
 
 /* ------------------------------
    UDDANNELSER
