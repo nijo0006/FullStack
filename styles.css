@@ -313,6 +313,15 @@ INFO
     align-items: center;
     padding-top: 25px;
     color: rgb(0, 56, 168);
+    padding-bottom: 30px;
+}
+#info-text{
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px 30px 50px;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 15px;
 }
 
 .circle-container {
@@ -350,6 +359,9 @@ INFO
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.circle-container{
+    padding-bottom: 50px;
 }
 
 .circle-container div:hover {
