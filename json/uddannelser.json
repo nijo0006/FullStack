@@ -1,0 +1,857 @@
+[
+  {
+    "skole_id": 1,
+    "skolenavn": "Copenhagen Business School - Handelshøjskolen",
+    "uddannelsesid": 1,
+    "uddannelsesnavn": "Business Administration and Digital Management, Frederiksberg, Study start: Summer start",
+    "mand": 108,
+    "kvinde": 102,
+    "ialt": 210
+  },
+  {
+    "skole_id": 1,
+    "skolenavn": "Copenhagen Business School - Handelshøjskolen",
+    "uddannelsesid": 2,
+    "uddannelsesnavn": "Erhvervsøkonomi-informationsteknologi, HA (it.), Frederiksberg, Studiestart: sommerstart",
+    "mand": 136,
+    "kvinde": 34,
+    "ialt": 170
+  },
+  {
+    "skole_id": 2,
+    "skolenavn": "Danmarks Tekniske Universitet",
+    "uddannelsesid": 3,
+    "uddannelsesnavn": "Diplomingeniør, softwareteknologi, Kgs. Lyngby, Studiestart: sommerstart",
+    "mand": 74,
+    "kvinde": 18,
+    "ialt": 92
+  },
+  {
+    "skole_id": 3,
+    "skolenavn": "Erhvervsakademi Dania",
+    "uddannelsesid": 4,
+    "uddannelsesnavn": "Automationsteknolog, Randers SØ, Studiestart: sommerstart",
+    "mand": 20,
+    "kvinde": 4,
+    "ialt": 24
+  },
+  {
+    "skole_id": 3,
+    "skolenavn": "Erhvervsakademi Dania",
+    "uddannelsesid": 5,
+    "uddannelsesnavn": "Datamatiker, Grenaa, Studiestart: sommerstart",
+    "mand": 21,
+    "kvinde": 4,
+    "ialt": 25
+  },
+  {
+    "skole_id": 3,
+    "skolenavn": "Erhvervsakademi Dania",
+    "uddannelsesid": 6,
+    "uddannelsesnavn": "Datamatiker, Silkeborg, Studiestart: sommerstart",
+    "mand": 18,
+    "kvinde": 5,
+    "ialt": 23
+  },
+  {
+    "skole_id": 3,
+    "skolenavn": "Erhvervsakademi Dania",
+    "uddannelsesid": 7,
+    "uddannelsesnavn": "Datamatiker, Skive, Studiestart: sommerstart",
+    "mand": 11,
+    "kvinde": 4,
+    "ialt": 15
+  },
+  {
+    "skole_id": 3,
+    "skolenavn": "Erhvervsakademi Dania",
+    "uddannelsesid": 8,
+    "uddannelsesnavn": "It-teknolog, Viborg, Studiestart: sommerstart",
+    "mand": 22,
+    "kvinde": 2,
+    "ialt": 24
+  },
+  {
+    "skole_id": 3,
+    "skolenavn": "Erhvervsakademi Dania",
+    "uddannelsesid": 9,
+    "uddannelsesnavn": "Multimediedesigner, Grenaa, Studiestart: sommerstart",
+    "mand": 7,
+    "kvinde": 5,
+    "ialt": 12
+  },
+  {
+    "skole_id": 3,
+    "skolenavn": "Erhvervsakademi Dania",
+    "uddannelsesid": 10,
+    "uddannelsesnavn": "Multimediedesigner, Skive, Studiestart: sommerstart",
+    "mand": 1,
+    "kvinde": 7,
+    "ialt": 8
+  },
+  {
+    "skole_id": 3,
+    "skolenavn": "Erhvervsakademi Dania",
+    "uddannelsesid": 11,
+    "uddannelsesnavn": "Professionsbachelor, økonomi og informationsteknologi, Viborg, Studiestart: sommerstart",
+    "mand": 0,
+    "kvinde": 0,
+    "ialt": 0
+  },
+  {
+    "skole_id": 4,
+    "skolenavn": "Erhvervsakademi MidtVest",
+    "uddannelsesid": 12,
+    "uddannelsesnavn": "Datamatiker, Herning, Studiestart: sommerstart",
+    "mand": 23,
+    "kvinde": 4,
+    "ialt": 27
+  },
+  {
+    "skole_id": 4,
+    "skolenavn": "Erhvervsakademi MidtVest",
+    "uddannelsesid": 13,
+    "uddannelsesnavn": "Multimediedesigner, Herning, Studiestart: sommerstart",
+    "mand": 0,
+    "kvinde": 11,
+    "ialt": 11
+  },
+  {
+    "skole_id": 5,
+    "skolenavn": "Erhvervsakademi SydVest",
+    "uddannelsesid": 14,
+    "uddannelsesnavn": "Datamatiker, Esbjerg, Studiestart: sommerstart",
+    "mand": 35,
+    "kvinde": 4,
+    "ialt": 39
+  },
+  {
+    "skole_id": 5,
+    "skolenavn": "Erhvervsakademi SydVest",
+    "uddannelsesid": 15,
+    "uddannelsesnavn": "Datamatiker, Sønderborg, Studiestart: sommerstart",
+    "mand": 9,
+    "kvinde": 4,
+    "ialt": 13
+  },
+  {
+    "skole_id": 5,
+    "skolenavn": "Erhvervsakademi SydVest",
+    "uddannelsesid": 16,
+    "uddannelsesnavn": "Datamatiker, Tønder, Studiestart: sommerstart",
+    "mand": 3,
+    "kvinde": 2,
+    "ialt": 5
+  },
+  {
+    "skole_id": 5,
+    "skolenavn": "Erhvervsakademi SydVest",
+    "uddannelsesid": 17,
+    "uddannelsesnavn": "Multimediedesigner, Esbjerg, Studiestart: sommerstart",
+    "mand": 6,
+    "kvinde": 4,
+    "ialt": 10
+  },
+  {
+    "skole_id": 5,
+    "skolenavn": "Erhvervsakademi SydVest",
+    "uddannelsesid": 18,
+    "uddannelsesnavn": "Multimediedesigner, Sønderborg, Studiestart: sommerstart",
+    "mand": 3,
+    "kvinde": 9,
+    "ialt": 12
+  },
+  {
+    "skole_id": 6,
+    "skolenavn": "Erhvervsakademi Aarhus",
+    "uddannelsesid": 19,
+    "uddannelsesnavn": "Automationsteknolog, Aarhus C, Studiestart: sommerstart",
+    "mand": 33,
+    "kvinde": 1,
+    "ialt": 34
+  },
+  {
+    "skole_id": 6,
+    "skolenavn": "Erhvervsakademi Aarhus",
+    "uddannelsesid": 20,
+    "uddannelsesnavn": "Datamatiker, Viby J, Studiestart: sommerstart",
+    "mand": 57,
+    "kvinde": 7,
+    "ialt": 64
+  },
+  {
+    "skole_id": 6,
+    "skolenavn": "Erhvervsakademi Aarhus",
+    "uddannelsesid": 21,
+    "uddannelsesnavn": "It-teknolog, Viby J, Studiestart: sommerstart",
+    "mand": 30,
+    "kvinde": 5,
+    "ialt": 35
+  },
+  {
+    "skole_id": 6,
+    "skolenavn": "Erhvervsakademi Aarhus",
+    "uddannelsesid": 22,
+    "uddannelsesnavn": "Multimediedesigner, Viby J, Studiestart: sommerstart",
+    "mand": 51,
+    "kvinde": 63,
+    "ialt": 114
+  },
+  {
+    "skole_id": 6,
+    "skolenavn": "Erhvervsakademi Aarhus",
+    "uddannelsesid": 23,
+    "uddannelsesnavn": "Professionsbachelor, cybersikkerhed, Viby J, Studiestart: sommerstart",
+    "mand": 32,
+    "kvinde": 4,
+    "ialt": 36
+  },
+  {
+    "skole_id": 6,
+    "skolenavn": "Erhvervsakademi Aarhus",
+    "uddannelsesid": 24,
+    "uddannelsesnavn": "Professionsbachelor, it-arkitektur, Viby J, Studiestart: sommerstart",
+    "mand": 28,
+    "kvinde": 8,
+    "ialt": 36
+  },
+  {
+    "skole_id": 6,
+    "skolenavn": "Erhvervsakademi Aarhus",
+    "uddannelsesid": 25,
+    "uddannelsesnavn": "Professionsbachelor, økonomi og informationsteknologi, Viby J, Studiestart: sommerstart",
+    "mand": 61,
+    "kvinde": 9,
+    "ialt": 70
+  },
+  {
+    "skole_id": 7,
+    "skolenavn": "Erhvervsakademiet Copenhagen Business Academy",
+    "uddannelsesid": 27,
+    "uddannelsesnavn": "Datamatiker, Rønne, Studiestart: sommerstart",
+    "mand": 3,
+    "kvinde": 4,
+    "ialt": 7
+  },
+  {
+    "skole_id": 8,
+    "skolenavn": "IBA Erhvervsakademi Kolding",
+    "uddannelsesid": 29,
+    "uddannelsesnavn": "Multimediedesigner, Kolding, E-læring, Studiestart: sommerstart",
+    "mand": 17,
+    "kvinde": 65,
+    "ialt": 82
+  },
+  {
+    "skole_id": 8,
+    "skolenavn": "IBA Erhvervsakademi Kolding",
+    "uddannelsesid": 30,
+    "uddannelsesnavn": "Multimediedesigner, Kolding, Studiestart: sommerstart",
+    "mand": 7,
+    "kvinde": 12,
+    "ialt": 19
+  },
+  {
+    "skole_id": 8,
+    "skolenavn": "IBA Erhvervsakademi Kolding",
+    "uddannelsesid": 31,
+    "uddannelsesnavn": "Professionsbachelor, it-arkitektur, Kolding, Studiestart: sommerstart",
+    "mand": 3,
+    "kvinde": 4,
+    "ialt": 7
+  },
+  {
+    "skole_id": 9,
+    "skolenavn": "IT-Universitetet i København",
+    "uddannelsesid": 32,
+    "uddannelsesnavn": "Data Science, København S, Study start: Summer start",
+    "mand": 77,
+    "kvinde": 46,
+    "ialt": 123
+  },
+  {
+    "skole_id": 9,
+    "skolenavn": "IT-Universitetet i København",
+    "uddannelsesid": 33,
+    "uddannelsesnavn": "Digital design og interaktive teknologier, København S, Studiestart: sommerstart",
+    "mand": 29,
+    "kvinde": 51,
+    "ialt": 80
+  },
+  {
+    "skole_id": 9,
+    "skolenavn": "IT-Universitetet i København",
+    "uddannelsesid": 34,
+    "uddannelsesnavn": "Global Business Informatics, København S, Study start: Summer start",
+    "mand": 50,
+    "kvinde": 41,
+    "ialt": 91
+  },
+  {
+    "skole_id": 9,
+    "skolenavn": "IT-Universitetet i København",
+    "uddannelsesid": 35,
+    "uddannelsesnavn": "Softwareudvikling, København S, Studiestart: sommerstart",
+    "mand": 107,
+    "kvinde": 23,
+    "ialt": 130
+  },
+  {
+    "skole_id": 10,
+    "skolenavn": "Københavns Erhvervsakademi (KEA)",
+    "uddannelsesid": 26,
+    "uddannelsesnavn": "Datamatiker, Kgs. Lyngby, Studiestart: sommerstart",
+    "mand": 61,
+    "kvinde": 21,
+    "ialt": 82
+  },
+  {
+    "skole_id": 10,
+    "skolenavn": "Københavns Erhvervsakademi (KEA)",
+    "uddannelsesid": 28,
+    "uddannelsesnavn": "Multimediedesigner, Kgs. Lyngby, Studiestart: sommerstart",
+    "mand": 14,
+    "kvinde": 49,
+    "ialt": 63
+  },
+  {
+    "skole_id": 10,
+    "skolenavn": "Københavns Erhvervsakademi (KEA)",
+    "uddannelsesid": 36,
+    "uddannelsesnavn": "Automationsteknolog, København NV, Studiestart: sommerstart",
+    "mand": 110,
+    "kvinde": 17,
+    "ialt": 127
+  },
+  {
+    "skole_id": 10,
+    "skolenavn": "Københavns Erhvervsakademi (KEA)",
+    "uddannelsesid": 37,
+    "uddannelsesnavn": "Datamatiker, København N, Studiestart: sommerstart",
+    "mand": 147,
+    "kvinde": 33,
+    "ialt": 180
+  },
+  {
+    "skole_id": 10,
+    "skolenavn": "Københavns Erhvervsakademi (KEA)",
+    "uddannelsesid": 38,
+    "uddannelsesnavn": "It-teknolog, København NV, Studiestart: sommerstart",
+    "mand": 111,
+    "kvinde": 19,
+    "ialt": 130
+  },
+  {
+    "skole_id": 10,
+    "skolenavn": "Københavns Erhvervsakademi (KEA)",
+    "uddannelsesid": 39,
+    "uddannelsesnavn": "Multimediedesigner, København N, Studiestart: sommerstart",
+    "mand": 61,
+    "kvinde": 169,
+    "ialt": 230
+  },
+  {
+    "skole_id": 10,
+    "skolenavn": "Københavns Erhvervsakademi (KEA)",
+    "uddannelsesid": 40,
+    "uddannelsesnavn": "Professionsbachelor, cybersikkerhed, København N, Studiestart: sommerstart",
+    "mand": 63,
+    "kvinde": 27,
+    "ialt": 90
+  },
+  {
+    "skole_id": 10,
+    "skolenavn": "Københavns Erhvervsakademi (KEA)",
+    "uddannelsesid": 41,
+    "uddannelsesnavn": "Professionsbachelor, it-arkitektur, København N, Studiestart: sommerstart",
+    "mand": 39,
+    "kvinde": 15,
+    "ialt": 54
+  },
+  {
+    "skole_id": 10,
+    "skolenavn": "Københavns Erhvervsakademi (KEA)",
+    "uddannelsesid": 42,
+    "uddannelsesnavn": "Professionsbachelor, økonomi og informationsteknologi, København N, Studiestart: sommerstart",
+    "mand": 96,
+    "kvinde": 44,
+    "ialt": 140
+  },
+  {
+    "skole_id": 11,
+    "skolenavn": "Københavns Universitet",
+    "uddannelsesid": 43,
+    "uddannelsesnavn": "Datalogi-økonomi, København Ø, Studiestart: sommerstart",
+    "mand": 55,
+    "kvinde": 13,
+    "ialt": 68
+  },
+  {
+    "skole_id": 11,
+    "skolenavn": "Københavns Universitet",
+    "uddannelsesid": 44,
+    "uddannelsesnavn": "Datalogi, København Ø, Studiestart: sommerstart",
+    "mand": 144,
+    "kvinde": 49,
+    "ialt": 193
+  },
+  {
+    "skole_id": 11,
+    "skolenavn": "Københavns Universitet",
+    "uddannelsesid": 45,
+    "uddannelsesnavn": "Informationsstudier, København S, Studiestart: sommerstart",
+    "mand": 19,
+    "kvinde": 34,
+    "ialt": 53
+  },
+  {
+    "skole_id": 11,
+    "skolenavn": "Københavns Universitet",
+    "uddannelsesid": 46,
+    "uddannelsesnavn": "Kommunikation og it, København S, Studiestart: sommerstart",
+    "mand": 36,
+    "kvinde": 78,
+    "ialt": 114
+  },
+  {
+    "skole_id": 11,
+    "skolenavn": "Københavns Universitet",
+    "uddannelsesid": 47,
+    "uddannelsesnavn": "Machine learning og datavidenskab, København Ø, Studiestart: sommerstart",
+    "mand": 73,
+    "kvinde": 14,
+    "ialt": 87
+  },
+  {
+    "skole_id": 12,
+    "skolenavn": "Professionshøjskolen University College Nordjylland",
+    "uddannelsesid": 48,
+    "uddannelsesnavn": "Automationsteknolog, Aalborg SV, Studiestart: sommerstart",
+    "mand": 25,
+    "kvinde": 1,
+    "ialt": 26
+  },
+  {
+    "skole_id": 12,
+    "skolenavn": "Professionshøjskolen University College Nordjylland",
+    "uddannelsesid": 49,
+    "uddannelsesnavn": "Datamatiker, Aalborg SV, Studiestart: sommerstart",
+    "mand": 56,
+    "kvinde": 10,
+    "ialt": 66
+  },
+  {
+    "skole_id": 12,
+    "skolenavn": "Professionshøjskolen University College Nordjylland",
+    "uddannelsesid": 50,
+    "uddannelsesnavn": "Datamatiker, Aalborg SV, Studiestart: vinterstart",
+    "mand": 4,
+    "kvinde": 1,
+    "ialt": 5
+  },
+  {
+    "skole_id": 12,
+    "skolenavn": "Professionshøjskolen University College Nordjylland",
+    "uddannelsesid": 51,
+    "uddannelsesnavn": "It-teknolog, Aalborg SV, Studiestart: sommerstart",
+    "mand": 25,
+    "kvinde": 3,
+    "ialt": 28
+  },
+  {
+    "skole_id": 12,
+    "skolenavn": "Professionshøjskolen University College Nordjylland",
+    "uddannelsesid": 52,
+    "uddannelsesnavn": "Multimediedesigner, Aalborg SV, Studiestart: sommerstart",
+    "mand": 13,
+    "kvinde": 18,
+    "ialt": 31
+  },
+  {
+    "skole_id": 12,
+    "skolenavn": "Professionshøjskolen University College Nordjylland",
+    "uddannelsesid": 53,
+    "uddannelsesnavn": "Professionsbachelor, eksport og teknologi, Aalborg, Studiestart: sommerstart",
+    "mand": 17,
+    "kvinde": 5,
+    "ialt": 22
+  },
+  {
+    "skole_id": 13,
+    "skolenavn": "Professionshøjskolen VIA University College",
+    "uddannelsesid": 54,
+    "uddannelsesnavn": "Bachelor of Engineering in Software Technology, Horsens, Study start: Summer start",
+    "mand": 57,
+    "kvinde": 31,
+    "ialt": 88
+  },
+  {
+    "skole_id": 13,
+    "skolenavn": "Professionshøjskolen VIA University College",
+    "uddannelsesid": 55,
+    "uddannelsesnavn": "Diplomingeniør, softwareteknologi, Horsens, E-læring, Studiestart: sommerstart",
+    "mand": 16,
+    "kvinde": 5,
+    "ialt": 21
+  },
+  {
+    "skole_id": 13,
+    "skolenavn": "Professionshøjskolen VIA University College",
+    "uddannelsesid": 56,
+    "uddannelsesnavn": "Diplomingeniør, softwareteknologi, Horsens, Studiestart: sommerstart",
+    "mand": 17,
+    "kvinde": 6,
+    "ialt": 23
+  },
+  {
+    "skole_id": 13,
+    "skolenavn": "Professionshøjskolen VIA University College",
+    "uddannelsesid": 57,
+    "uddannelsesnavn": "Diplomingeniør, softwareteknologi, Viborg, Studiestart: sommerstart",
+    "mand": 7,
+    "kvinde": 1,
+    "ialt": 8
+  },
+  {
+    "skole_id": 14,
+    "skolenavn": "Syddansk Universitet",
+    "uddannelsesid": 58,
+    "uddannelsesnavn": "Bachelor of Engineering in Mechatronics, Sønderborg, Study start: Summer start",
+    "mand": 88,
+    "kvinde": 23,
+    "ialt": 111
+  },
+  {
+    "skole_id": 14,
+    "skolenavn": "Syddansk Universitet",
+    "uddannelsesid": 59,
+    "uddannelsesnavn": "Datalogi, Odense M, Studiestart: sommerstart",
+    "mand": 48,
+    "kvinde": 16,
+    "ialt": 64
+  },
+  {
+    "skole_id": 14,
+    "skolenavn": "Syddansk Universitet",
+    "uddannelsesid": 60,
+    "uddannelsesnavn": "Diplomingeniør, integreret design, Odense M, Studiestart: sommerstart",
+    "mand": 14,
+    "kvinde": 21,
+    "ialt": 35
+  },
+  {
+    "skole_id": 14,
+    "skolenavn": "Syddansk Universitet",
+    "uddannelsesid": 61,
+    "uddannelsesnavn": "Diplomingeniør, robotteknologi, Odense M, Studiestart: sommerstart",
+    "mand": 20,
+    "kvinde": 8,
+    "ialt": 28
+  },
+  {
+    "skole_id": 14,
+    "skolenavn": "Syddansk Universitet",
+    "uddannelsesid": 62,
+    "uddannelsesnavn": "Diplomingeniør, softwareteknologi, Odense M, Studiestart: sommerstart",
+    "mand": 34,
+    "kvinde": 15,
+    "ialt": 49
+  },
+  {
+    "skole_id": 14,
+    "skolenavn": "Syddansk Universitet",
+    "uddannelsesid": 63,
+    "uddannelsesnavn": "International virksomhedskommunikation i engelsk, Kolding, Studiestart: sommerstart",
+    "mand": 1,
+    "kvinde": 10,
+    "ialt": 11
+  },
+  {
+    "skole_id": 14,
+    "skolenavn": "Syddansk Universitet",
+    "uddannelsesid": 64,
+    "uddannelsesnavn": "Medievidenskab, Odense M, Studiestart: sommerstart",
+    "mand": 25,
+    "kvinde": 31,
+    "ialt": 56
+  },
+  {
+    "skole_id": 15,
+    "skolenavn": "UCL Erhvervsakademi og Professionshøjskole",
+    "uddannelsesid": 65,
+    "uddannelsesnavn": "Automationsteknolog, Fredericia, Studiestart: sommerstart",
+    "mand": 12,
+    "kvinde": 2,
+    "ialt": 14
+  },
+  {
+    "skole_id": 15,
+    "skolenavn": "UCL Erhvervsakademi og Professionshøjskole",
+    "uddannelsesid": 66,
+    "uddannelsesnavn": "Automationsteknolog, Odense C, Studiestart: sommerstart",
+    "mand": 26,
+    "kvinde": 1,
+    "ialt": 27
+  },
+  {
+    "skole_id": 15,
+    "skolenavn": "UCL Erhvervsakademi og Professionshøjskole",
+    "uddannelsesid": 67,
+    "uddannelsesnavn": "Datamatiker, Odense C, E-læring, Studiestart: vinterstart",
+    "mand": 63,
+    "kvinde": 32,
+    "ialt": 95
+  },
+  {
+    "skole_id": 15,
+    "skolenavn": "UCL Erhvervsakademi og Professionshøjskole",
+    "uddannelsesid": 68,
+    "uddannelsesnavn": "Datamatiker, Odense C, Studiestart: sommerstart",
+    "mand": 73,
+    "kvinde": 17,
+    "ialt": 90
+  },
+  {
+    "skole_id": 15,
+    "skolenavn": "UCL Erhvervsakademi og Professionshøjskole",
+    "uddannelsesid": 69,
+    "uddannelsesnavn": "Datamatiker, Vejle, Studiestart: sommerstart",
+    "mand": 33,
+    "kvinde": 8,
+    "ialt": 41
+  },
+  {
+    "skole_id": 15,
+    "skolenavn": "UCL Erhvervsakademi og Professionshøjskole",
+    "uddannelsesid": 70,
+    "uddannelsesnavn": "Datamatiker, Vejle, Studiestart: vinterstart",
+    "mand": 5,
+    "kvinde": 0,
+    "ialt": 5
+  },
+  {
+    "skole_id": 15,
+    "skolenavn": "UCL Erhvervsakademi og Professionshøjskole",
+    "uddannelsesid": 71,
+    "uddannelsesnavn": "It-teknolog, Odense C, Studiestart: sommerstart",
+    "mand": 63,
+    "kvinde": 7,
+    "ialt": 70
+  },
+  {
+    "skole_id": 15,
+    "skolenavn": "UCL Erhvervsakademi og Professionshøjskole",
+    "uddannelsesid": 72,
+    "uddannelsesnavn": "Multimediedesigner, Odense C, Studiestart: sommerstart",
+    "mand": 14,
+    "kvinde": 41,
+    "ialt": 55
+  },
+  {
+    "skole_id": 15,
+    "skolenavn": "UCL Erhvervsakademi og Professionshøjskole",
+    "uddannelsesid": 73,
+    "uddannelsesnavn": "Multimediedesigner, Odense C, Studiestart: vinterstart",
+    "mand": 2,
+    "kvinde": 6,
+    "ialt": 8
+  },
+  {
+    "skole_id": 15,
+    "skolenavn": "UCL Erhvervsakademi og Professionshøjskole",
+    "uddannelsesid": 74,
+    "uddannelsesnavn": "Professionsbachelor, økonomi og informationsteknologi, Odense C, Studiestart: sommerstart",
+    "mand": 20,
+    "kvinde": 5,
+    "ialt": 25
+  },
+  {
+    "skole_id": 16,
+    "skolenavn": "Zealand Sjællands Erhvervsakademi",
+    "uddannelsesid": 75,
+    "uddannelsesnavn": "Datamatiker, Næstved, Studiestart: sommerstart",
+    "mand": 29,
+    "kvinde": 8,
+    "ialt": 37
+  },
+  {
+    "skole_id": 16,
+    "skolenavn": "Zealand Sjællands Erhvervsakademi",
+    "uddannelsesid": 76,
+    "uddannelsesnavn": "Datamatiker, Roskilde, Studiestart: sommerstart",
+    "mand": 80,
+    "kvinde": 18,
+    "ialt": 98
+  },
+  {
+    "skole_id": 16,
+    "skolenavn": "Zealand Sjællands Erhvervsakademi",
+    "uddannelsesid": 77,
+    "uddannelsesnavn": "Datamatiker, Roskilde, Studiestart: vinterstart",
+    "mand": 6,
+    "kvinde": 4,
+    "ialt": 10
+  },
+  {
+    "skole_id": 16,
+    "skolenavn": "Zealand Sjællands Erhvervsakademi",
+    "uddannelsesid": 78,
+    "uddannelsesnavn": "It-teknolog, Køge, Studiestart: sommerstart",
+    "mand": 34,
+    "kvinde": 7,
+    "ialt": 41
+  },
+  {
+    "skole_id": 16,
+    "skolenavn": "Zealand Sjællands Erhvervsakademi",
+    "uddannelsesid": 79,
+    "uddannelsesnavn": "Multimediedesigner, Køge, Studiestart: sommerstart",
+    "mand": 7,
+    "kvinde": 15,
+    "ialt": 22
+  },
+  {
+    "skole_id": 16,
+    "skolenavn": "Zealand Sjællands Erhvervsakademi",
+    "uddannelsesid": 80,
+    "uddannelsesnavn": "Multimediedesigner, Køge, Studiestart: vinterstart",
+    "mand": 0,
+    "kvinde": 5,
+    "ialt": 5
+  },
+  {
+    "skole_id": 16,
+    "skolenavn": "Zealand Sjællands Erhvervsakademi",
+    "uddannelsesid": 81,
+    "uddannelsesnavn": "Multimediedesigner, Nykøbing F, Studiestart: sommerstart",
+    "mand": 3,
+    "kvinde": 3,
+    "ialt": 6
+  },
+  {
+    "skole_id": 16,
+    "skolenavn": "Zealand Sjællands Erhvervsakademi",
+    "uddannelsesid": 82,
+    "uddannelsesnavn": "Multimediedesigner, Slagelse, Studiestart: sommerstart",
+    "mand": 4,
+    "kvinde": 17,
+    "ialt": 21
+  },
+  {
+    "skole_id": 16,
+    "skolenavn": "Zealand Sjællands Erhvervsakademi",
+    "uddannelsesid": 83,
+    "uddannelsesnavn": "Professionsbachelor, fremmedsprog og digital markedskommunikation, Slagelse, Studiestart: sommerstart",
+    "mand": 5,
+    "kvinde": 14,
+    "ialt": 19
+  },
+  {
+    "skole_id": 16,
+    "skolenavn": "Zealand Sjællands Erhvervsakademi",
+    "uddannelsesid": 84,
+    "uddannelsesnavn": "Professionsbachelor, økonomi og informationsteknologi, Roskilde, Studiestart: sommerstart",
+    "mand": 11,
+    "kvinde": 4,
+    "ialt": 15
+  },
+  {
+    "skole_id": 17,
+    "skolenavn": "Aalborg Universitet",
+    "uddannelsesid": 85,
+    "uddannelsesnavn": "Datalogi, Aalborg Øst, Studiestart: sommerstart",
+    "mand": 48,
+    "kvinde": 4,
+    "ialt": 52
+  },
+  {
+    "skole_id": 17,
+    "skolenavn": "Aalborg Universitet",
+    "uddannelsesid": 86,
+    "uddannelsesnavn": "Diplomingeniør, cybersikkerhed, København SV, Studiestart: sommerstart",
+    "mand": 37,
+    "kvinde": 7,
+    "ialt": 44
+  },
+  {
+    "skole_id": 17,
+    "skolenavn": "Aalborg Universitet",
+    "uddannelsesid": 87,
+    "uddannelsesnavn": "Informationsteknologi, Aalborg Øst, Studiestart: sommerstart",
+    "mand": 9,
+    "kvinde": 9,
+    "ialt": 18
+  },
+  {
+    "skole_id": 17,
+    "skolenavn": "Aalborg Universitet",
+    "uddannelsesid": 88,
+    "uddannelsesnavn": "Kommunikation og digitale medier, Aalborg Øst, Studiestart: sommerstart",
+    "mand": 25,
+    "kvinde": 77,
+    "ialt": 102
+  },
+  {
+    "skole_id": 18,
+    "skolenavn": "Aarhus Universitet",
+    "uddannelsesid": 89,
+    "uddannelsesnavn": "Data Science, Aarhus C, Study start: Summer start",
+    "mand": 24,
+    "kvinde": 16,
+    "ialt": 40
+  },
+  {
+    "skole_id": 18,
+    "skolenavn": "Aarhus Universitet",
+    "uddannelsesid": 90,
+    "uddannelsesnavn": "Datalogi, Aarhus C, Studiestart: sommerstart",
+    "mand": 92,
+    "kvinde": 28,
+    "ialt": 120
+  },
+  {
+    "skole_id": 18,
+    "skolenavn": "Aarhus Universitet",
+    "uddannelsesid": 91,
+    "uddannelsesnavn": "Digital design - it, æstetik og interaktion, Aarhus C, Studiestart: sommerstart",
+    "mand": 20,
+    "kvinde": 40,
+    "ialt": 60
+  },
+  {
+    "skole_id": 18,
+    "skolenavn": "Aarhus Universitet",
+    "uddannelsesid": 92,
+    "uddannelsesnavn": "Diplomingeniør, softwareteknologi, Aarhus C, Studiestart: sommerstart",
+    "mand": 107,
+    "kvinde": 26,
+    "ialt": 133
+  },
+  {
+    "skole_id": 18,
+    "skolenavn": "Aarhus Universitet",
+    "uddannelsesid": 93,
+    "uddannelsesnavn": "Diplomingeniør, softwareteknologi, Aarhus C, Studiestart: vinterstart",
+    "mand": 26,
+    "kvinde": 7,
+    "ialt": 33
+  },
+  {
+    "skole_id": 18,
+    "skolenavn": "Aarhus Universitet",
+    "uddannelsesid": 94,
+    "uddannelsesnavn": "It-produktudvikling, Aarhus C, Studiestart: sommerstart",
+    "mand": 18,
+    "kvinde": 7,
+    "ialt": 25
+  },
+  {
+    "skole_id": 18,
+    "skolenavn": "Aarhus Universitet",
+    "uddannelsesid": 95,
+    "uddannelsesnavn": "Medievidenskab, Aarhus C, Studiestart: sommerstart",
+    "mand": 24,
+    "kvinde": 99,
+    "ialt": 123
+  }
+]

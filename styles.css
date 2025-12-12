@@ -1,0 +1,1351 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+    line-height: 2; /* 2 gange font-størrelsen */
+}
+
+body {
+    background-color: white;
+}
+
+/*-----------------------------------
+h1 female perspective + logo
+-----------------------------------*/
+
+
+h1.logo {
+    margin: 0;
+}
+
+h1.logo a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: rgb(0, 56, 168);
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.logo-img {
+    width: 60px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 20px;
+    line-height: 1.1;
+    font-family: Arial;
+}
+
+/*-----------------------------------
+header punkter
+ -----------------------------------*/
+header {
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: sticky;
+    top: 0;
+    background-color: #fcebf9;
+    padding: 15px 40px;
+    z-index: 9999; /* gør bla at timeline går under headeren og ikke køre ovenpå*/
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px; /* afstand mellem links */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 56, 168);
+    font-family: Arial;
+    font-size: 15px;
+    padding: 4px 10px;
+    border-radius: 60px;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+/*to make the "active" tag bold when on that specific page*/
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+/*-----------------------------------
+header punkter
+ -----------------------------------*/
+
+.timeline-header {
+    text-align: center;
+    padding: 1.4rem 0;
+    background-color: whitesmoke;
+    font-weight: 600;
+}
+
+/* ------------------------------
+   FORSIDE
+   ------------------------------ */
+
+.frontpage1st-section {
+    background-color: white;
+}
+
+.frontpage-quotebold {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 100px;
+    padding-left: 80px;
+    color: rgb(0, 56, 168);
+    font-size: 50px;
+    line-height: 1;
+}
+
+.frontpage-quoteitalic {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 80px;
+    margin-bottom: 40px;
+    color: rgb(0, 56, 168);
+    font-size: 45px;
+    font-style: italic;
+    font-weight: lighter;
+    line-height: 1;
+}
+
+.circle-containers-frontpage {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.circle-container-frontpage1 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    padding: 150px;
+    background-color: #fcebf9;;
+    color: rgb(239, 112, 166);
+    white-space: nowrap;
+    animation-duration: 6s;
+
+}
+
+.circle-container-frontpage1 h4, .circle-container-frontpage2 h4 {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 1.5;
+}
+
+.circle-container-frontpage1 h5, .circle-container-frontpage2 h5 {
+    font-style: italic;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-container-frontpage2 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    padding: 150px;
+    border-radius: 50%;
+    background-color: #fcebf9;;
+    color: rgb(239, 112, 166);
+    white-space: nowrap;
+    animation-duration: 8s;
+}
+
+/* boble-1 */
+.circle-container-frontpage1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #fcebf9, rgb(248, 230, 237));
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    animation: float 6s ease-in-out infinite;
+}
+
+/* boble-2 */
+.circle-container-frontpage2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #fcebf9, rgb(248, 230, 237));
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Simpel svæve-animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.tagline {
+    padding-bottom: 5px;
+}
+
+
+.tagline-quote {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-bottom: 50px;
+    color: rgba(129, 177, 234, 0.76);
+    font-size: 30px;
+    font-style: italic;
+    font-weight: lighter;
+
+}
+
+.index-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 100px;
+    color: rgb(0, 56, 168);
+}
+
+.text-box1, .text-box2, .text-box3 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    background-color: #fcebf9;
+    color: rgb(0, 56, 168);
+    white-space: normal;
+    font-size: 20px;
+}
+
+.info {
+    padding-top: 20px;
+    font-size: 12px;
+
+}
+
+.quote-link {
+    text-decoration: none; /* ingen blå understregning */
+}
+
+.quote-link:hover .text-box1 {
+    cursor: pointer;
+}
+
+
+.image_index img {
+    width: 100%;
+    height: 80%;
+    display: block; /* prevents bottom gap */
+}
+
+.small-text-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* mellemrum mellem bokse */
+    margin-top: -400px; /* ✨ rykkér bokse op på billedet */
+}
+
+
+.frontpage-whitespace {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(0, 56, 168);
+    padding: 150px;
+    margin: 80px;
+    width: 1200px;
+}
+
+.frontpage-whitespace p {
+    padding-top: 20px;
+    color: rgb(0, 56, 168);
+}
+
+.frontpage-whitespace h3 {
+    padding-top: 80px;
+}
+
+
+/*-------------------------------------
+INFO
+ -------------------------------------*/
+#info-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    color: rgb(0, 56, 168);
+}
+
+.circle-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.circle-container1, .circle-container2, .circle-container3, .circle-container4, .circle-container5 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    padding: 120px;
+    border-radius: 50%;
+    background-color: rgba(217, 221, 255);
+    color: rgb(0, 56, 168);
+    white-space: nowrap;
+
+
+}
+
+.circle-container h5 {
+    font-style: italic;
+    flex-direction: column;
+    margin-top: 10px;
+    color: rgba(0, 56, 168, 0.56);
+}
+
+.circle-container5 h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-container div:hover {
+    transform: scale(1.10);
+    background-color: rgba(217, 221, 255, 0.5);
+}
+
+
+/*------INFO CHARTS STYLING----------*/
+#chart-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+#charts {
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 100px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between; /* lige afstand mellem charts */
+    gap: 20px; /* afstand mellem charts */
+    padding: 20px 100px 100px 100px;
+    align-items: flex-start; /* top-alignment */
+    border-radius: 12px;
+    flex-wrap: nowrap; /* holder dem på én linje */
+    overflow-x: auto;
+}
+
+.charts-box {
+    background-color: #fcebf9;
+    flex-wrap: nowrap; /* holder dem på én linje */
+    overflow-x: auto; /* scroll hvis for smal skærm */
+}
+
+.chart-wrapper {
+    flex: 500px; /* fast bredde pr. chart */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* fast bredde */
+    min-width: 250px;
+}
+
+.chart-wrapper canvas {
+    width: 100% !important;
+    height: 100% !important; /* fylder hele wrapperen */
+}
+
+#admissionValue { /*   adgangskvotient   */
+    font-size: 40px;
+    color: deeppink;
+    /*mangler en fed skrift og nok en font-weight der er høj også */
+    padding-top: 40px;
+
+}
+
+.gender-grid {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 30px); /* faste kolonner */
+    gap: 5px;
+}
+
+.gender-icon {
+    width: 30px;
+    height: 30px;
+    background-size: contain; /* viser hele ikonet */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Farver */
+.gender-icon.female {
+    background-image: url('../photos/pink-icon.png'); /* evt. SVG */
+}
+
+.gender-icon.male {
+    background-image: url('../photos/grey-icon.png');
+}
+
+
+/* ------------------------------
+   BIAS CASES
+   ------------------------------ */
+
+.biascaseintro {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+    color: rgb(0, 56, 168);
+    font-size: 15px;
+}
+
+.biascaseintro h3 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+    color: rgb(0, 56, 168);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.women-biascase {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 100px;
+}
+
+.why-are-women-necesary {
+    background-color: white;
+    padding-left: 100px;
+
+
+}
+
+.when-women-are-needed, .when-women-participate {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 400px;
+    width: 400px;
+    color: rgb(0, 56, 168);
+    white-space: normal;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.when-women-participate {
+    background-color: rgba(166, 241, 160, 0.45);
+}
+
+.when-women-are-needed {
+    background-color: rgba(246, 155, 155, 0.51);
+}
+
+
+.biascasesh2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    color: rgb(0, 56, 168);
+}
+
+/* Universal layout for all bias cases */
+.biascase-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+}
+
+/* Text column */
+.biascase-text {
+    flex: 1;
+}
+
+/* Heading above paragraph */
+.biascase-text h3 {
+    margin-bottom: 15px;
+}
+
+/* Image column */
+.biascase-photo img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.biascase1, .biascase2, .biascase3, .biascase4, .biascase5, .biascase6, .biascase7 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 50px;
+    color: rgb(0, 56, 168);
+    font-size: 15px;
+}
+
+/* Backgrounds — keep these as they are */
+.biascase1 {
+    background-color: #fcebf9;
+}
+
+.biascase2 {
+    background-color: white;
+}
+
+.biascase3 {
+    background-color: rgb(0, 56, 168);
+    color: white;
+}
+
+.biascase4 {
+    background-color: white;
+}
+
+.biascase5 {
+    background-color: #fcebf9;
+}
+
+.biascase6 {
+    background-color: rgb(0, 56, 168);
+    color: white;
+}
+
+.biascase7 {
+    background-color: white;
+}
+
+.biascase-sources {
+    font-style: italic;
+    font-size: 12px;
+}
+
+/* ------------------------------
+   TIMELINE
+   ------------------------------ */
+.timeline-wrapper { /** Container that wraps the entire timeline */
+    max-width: 1200px; /** Sets maximum width of the timeline wrapper */
+    margin: 40px auto; /** Adds vertical margin and centers horizontally */
+    padding: 20px; /** Adds inner spacing */
+    position: relative; /** Allows absolutely positioned children */
+}
+
+.timeline { /** The main timeline list */
+    list-style: none; /** Removes default list bullets */
+    margin: 0; /** Removes default margin */
+    padding: 0; /** Removes default padding */
+    position: relative; /** Enables absolute positioning for child elements */
+}
+
+/* Vertical line */
+.timeline::before { /** Creates the central vertical line */
+    content: ""; /** Required for pseudo-element to appear */
+    position: absolute; /** Positions element relative to timeline container */
+    top: 0; /** Aligns to top */
+    bottom: 0; /** Stretches to bottom */
+    left: 50%; /** Centers horizontally */
+    width: 4px; /** Line thickness */
+    background: rgba(217, 221, 255); /** Color of the vertical line */
+    transform: translateX(-50%); /** Adjusts position to be perfectly centered */
+}
+
+/* Each item */
+.timeline li { /** Individual timeline event item */
+    align-items: flex-start; /** Aligns flex children at the start (if flex used) */
+    width: 50%; /** Each item takes half of the timeline width */
+    padding: 25px 45px; /** Inner spacing */
+    position: relative; /** Needed for positioning the circle marker */
+}
+
+.timeline-img { /** Image used inside a timeline entry */
+    width: 140px; /** Sets width of the image */
+    border-radius: 10px; /** Rounds corners */
+    flex-shrink: 0; /** Prevents the image from shrinking */
+}
+
+.text-box { /** Container for text sections in each item */
+    display: flex; /** Makes children align in a column */
+    flex-direction: column; /** Stacks elements vertically */
+    gap: 15px; /** Space between stacked elements */
+    flex: 1; /** Allows text box to grow and fill space */
+}
+
+/* Alternate layout */
+.timeline li:nth-child(odd) { /** Odd-numbered items appear on the left */
+    left: 0; /** Positions item on the left side */
+}
+
+.timeline li:nth-child(even) { /** Even-numbered items appear on the right */
+    left: 50%; /** Positions item on the right side */
+}
+
+/* Circle marker */
+.timeline li::before { /** Circle indicator for each timeline item */
+    content: ""; /** Makes pseudo-element visible */
+    position: absolute; /** Allows positioning relative to the item */
+    top: 28px; /** Vertical position of the circle */
+    width: 22px; /** Width of the circle */
+    height: 22px; /** Height of the circle */
+    background: rgb(0, 56, 168); /** Circle fill color */
+    border: 4px solid rgb(0, 56, 168); /** Border of the circle */
+    border-radius: 50%; /** Makes the element circular */
+    z-index: 10; /** Ensures circle appears above other elements */
+    left: calc(100% - 10px); /** Positions circle near the vertical line */
+    transform: translateX(-50%); /** Adjusts horizontal alignment */
+}
+
+/* Move circle for even items */
+.timeline li:nth-child(even)::before { /** Adjusts circle for right-side items */
+    left: -10px; /** Moves the circle leftward for even items */
+}
+
+/* Content box styling */
+.timeline li h3,
+.timeline li p { /** Styles headings and paragraphs */
+    background: rgba(217, 221, 255); /** Light background color */
+    padding: 18px 22px; /** Inner spacing */
+    border-radius: 10px; /** Rounds corners */
+    margin-bottom: 15px; /** Space below each block */
+    color: #4B2E2A; /** Text color */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08); /** Adds soft shadow */
+}
+
+.timeline li small { /** Styles <small> text similarly */
+    display: inline-block; /** Makes small behave like a block box */
+    background: rgba(217, 221, 255); /** Same light background */
+    padding: 18px 22px; /** Inner spacing */
+    border-radius: 10px; /** Rounded corners */
+    margin-bottom: 15px; /** Space below */
+    color: #4B2E2A; /** Text color */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08); /** Soft shadow */
+}
+
+/* Title label */
+.timeline li .title { /** Section titles for each timeline item */
+    display: inline-block; /** Makes the title fit to its content */
+    background: rgb(0, 56, 168); /** Dark blue background */
+    color: rgba(217, 221, 255); /** Light text color */
+    padding: 30px 48px; /** Inner spacing */
+    border-radius: 8px; /** Rounded corners */
+    margin-bottom: 15px; /** Space below title */
+    font-weight: 700; /** Bold text */
+    text-transform: uppercase; /** Makes all letters uppercase */
+    font-size: 15px; /** Text size */
+    letter-spacing: 1px; /** Adds space between letters */
+}
+
+/* Close button */
+.close { /** Close button styling */
+    display: inline-block; /** Makes it behave like a block segment */
+    margin-top: 5px; /** Space above */
+    font-size: 13px; /** Text size */
+    color: #4B2E2A; /** Text color */
+    cursor: pointer; /** Shows pointer cursor on hover */
+}
+
+/* Billede + titel i samme række */
+.title-row { /** Container for aligning image + title horizontally */
+    display: flex; /** Enables horizontal layout */
+    align-items: center; /** Vertically aligns elements */
+    gap: 20px; /** Space between image and title */
+}
+
+/* Billedet */
+.title-row .timeline-img { /** Smaller image version for title row */
+    width: 85px; /** Reduced width */
+    height: auto; /** Auto height to keep proportions */
+    border-radius: 10px; /** Rounded corners */
+    flex-shrink: 0; /** Prevents shrinking */
+}
+
+
+/* ------------------------------
+   TIMELINE
+   ------------------------------ */
+
+.timeline-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Vertical line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 5px;
+    background: rgba(217, 221, 255);
+    transform: translateX(-50%);
+}
+
+/* Each item */
+.timeline li {
+    align-items: flex-start;
+    width: 50%;
+    padding: 25px 45px;
+    position: relative;
+}
+
+.timeline-img {
+    width: 140px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+
+/* Alternate layout */
+.timeline li:nth-child(odd) {
+    left: 0;
+}
+
+.timeline li:nth-child(even) {
+    left: 50%;
+}
+
+/* Circle marker */
+.timeline li::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    width: 22px;
+    height: 22px;
+    background: rgb(0, 56, 168);
+    border: 4px solid rgb(0, 56, 168);
+    border-radius: 50%;
+    z-index: 10;
+    left: calc(100% - 10px);
+    transform: translateX(-50%);
+}
+
+/* Move circle for even items */
+.timeline li:nth-child(even)::before {
+    left: -10px;
+}
+
+/* Content box styling */
+.timeline li h3,
+.timeline li p {
+    background: rgba(217, 221, 255);
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #4B2E2A;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.timeline li small {
+    display: inline-block;
+    background: rgba(217, 221, 255);
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #4B2E2A;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+
+}
+
+/* Title label */
+.timeline li .title {
+    display: inline-block;
+    background: rgb(0, 56, 168);
+    color: rgba(217, 221, 255);
+    padding: 30px 48px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+/* Close button */
+.close {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #4B2E2A;
+    cursor: pointer;
+}
+
+/* Billede + titel i samme række */
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Billedet */
+.title-row .timeline-img {
+    width: 85px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+
+/*------Rollemodeller + videoer-------*/
+
+
+/*------ Sektionen ------*/
+.women-in-it-education {
+    padding: 60px 0;
+    background: #e8e8ff;
+}
+
+.women-in-it-education h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #0038a8; /* blå tekst */
+    margin-bottom: 40px;
+}
+
+/*------ Rækken med 3 rollemodeller ------*/
+.role-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/*------ Kortet ------*/
+.role-card {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 56, 168);
+    padding-bottom: 4px;
+    border-bottom: 2px solid rgb(0, 56, 168);
+    width: 432px;
+}
+
+/* Titel + navn */
+.role-card h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    color: rgb(0, 56, 168);
+    padding-bottom: 4px;
+    border-bottom: 2px solid rgb(0, 56, 168);
+    font-style: italic;
+}
+
+.role-name {
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: rgb(0, 56, 168);
+}
+
+/* Den blå streg under tekst */
+.role-text-line {
+    width: 100%;
+    height: 2px;
+    background: rgb(0, 56, 168);
+    margin: 10px 0 12px 0;
+}
+
+/*------ Video wrapper ------*/
+.role-video-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.role-video {
+    width: 100%;
+    object-fit: cover;
+    height: 612px;
+
+}
+
+/* Play-knap */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button::before {
+    content: "";
+    border-style: solid;
+    border-width: 14px 0 14px 22px;
+    border-color: transparent transparent transparent #555;
+}
+
+
+/* ------------------------------
+   UDDANNELSER
+   ------------------------------ */
+/* map */
+
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+#map {
+    height: 500px;
+    width: 60%; /* ← ændret fra 80% til 60% */
+    max-width: 900px; /* ← optional: så det ikke bliver gigantisk på store skærme */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* titel */
+#info-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    color: rgb(0, 56, 168);
+}
+
+/* overskrift */
+.educationlocation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    color: rgb(0, 56, 168);
+}
+
+/* Fælles styling for ALLE square-sektioner */
+.square-cph1,
+.square-cph2,
+.square-jutland1,
+.square-jutland2,
+.square-jutland3,
+.square-bornholm1,
+.square-fyn1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+.square-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10%;
+    height: 450px;
+    width: 350px;
+    background-color: rgba(217, 221, 255);
+    color: rgb(0, 56, 168);
+    white-space: normal;
+    margin-bottom: 50px;
+}
+
+.education-logo img {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    max-height: 80px;
+    margin: 40px 20px;
+}
+
+.uddannelser-liste {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    padding-left: 18px;
+    width: 90%;
+    color: black;
+}
+
+.uddannelser-liste li {
+    line-height: 1.5;
+    padding: 2px;
+}
+
+/* ------------------------------
+   OPSLAGSTAVLE
+   ------------------------------ */
+
+.messageboard-content{
+    margin-top: 100px;
+}
+
+.messageboard-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    color: rgb(0, 56, 168);
+}
+
+.messageboard-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    color: rgb(0, 56, 168);
+    font-size: 15px;
+}
+
+.messageboard-all {
+
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageboard {
+    min-width: 1400px;
+    min-height: 900px;
+    background-image: url("../photos/opslagstavle.png");
+    background-size: cover; /* fylder hele containeren */
+    background-position: center; /* centrerer billedet */
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+/* ---- POST-ITS ---- */
+.postit {
+    position: absolute;
+    padding: 30px 20px 20px 20px;
+    width: auto;
+    height: auto;
+    min-width: 140px;
+    min-height: 140px;
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: italic;
+    line-height: 2;
+    background-color: #fff98c;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    transform-origin: top center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover-effekt */
+.postit:hover {
+    transform: scale(1.07) rotate(0deg);
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+
+/* Farveskift mellem post-its */
+.postit:nth-child(odd) {
+    background-color: #fff98c;
+}
+
+.postit:nth-child(even) {
+    background-color: #ffc9e0;
+}
+
+
+/* ---- TEGNESTIFTER ---- */
+.pin {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 8px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.red {
+    background-color: #e80404;
+}
+
+
+/* ---- PLACERING AF DE 12 POST-ITS ---- */
+.p1 {
+    top: 13%;
+    left: 10%;
+    transform: rotate(-4deg);
+    width: 190px;
+}
+
+.p2 {
+    top: 15%;
+    left: 30%;
+    transform: rotate(3deg);
+    width: 250px;
+}
+
+.p3 {
+    top: 17%;
+    left: 55%;
+    transform: rotate(-7deg);
+    width: 250px;
+}
+
+.p4 {
+    top: 16%;
+    left: 78%;
+    transform: rotate(5deg);
+    width: 250px;
+}
+
+.p5 {
+    top: 38%;
+    left: 8%;
+    transform: rotate(-2deg);
+    width: 300px;
+}
+
+.p6 {
+    top: 41%;
+    left: 32%;
+    transform: rotate(4deg);
+    width: 250px;
+}
+
+.p7 {
+    top: 43%;
+    left: 57%;
+    transform: rotate(0deg);
+    width: 290px;
+}
+
+.p8 {
+    top: 40%;
+    left: 78%;
+    transform: rotate(3deg);
+    width: 250px;
+}
+
+.p9 {
+    top: 70%;
+    left: 12%;
+    transform: rotate(-3deg);
+    width: 250px;
+}
+
+.p10 {
+    top: 67%;
+    left: 36%;
+    transform: rotate(6deg);
+    width: 220px;
+}
+
+.p11 {
+    top: 73%;
+    left: 55%;
+    transform: rotate(-4deg);
+    width: 250px;
+}
+
+.p12 {
+    top: 69%;
+    left: 75%;
+    transform: rotate(2deg);
+    width: 250px;
+}
+
+
+/* ------------------------------
+   FOOTER
+   ------------------------------ */
+
+.footer {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+/* ---------------- NEWSLETTER ---------------- */
+
+.newsletter-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: #fcebf9;
+}
+
+.newsletter-text {
+    max-width: 600px;
+    margin: 80px;
+}
+
+.newsletter-text h2 {
+    color: rgb(0, 56, 168);
+    margin-bottom: 20px;
+}
+
+.newsletter-text strong {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.newsletter-text a {
+    color: rgb(0, 56, 168);
+}
+
+.newsletter-form {
+    background: #fafafa;
+    margin: 80px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #ececec;
+}
+
+.newsletter-form input {
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #ffc9e0;
+    color: rgb(0, 56, 168);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* ---------------- COLUMNS ---------------- */
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    background-color: rgb(0, 56, 168);
+    color: #fcebf9;
+}
+
+.footer-col h3 {
+    margin: 40px;
+    color: #fcebf9;
+}
+
+.footer-col a {
+    color: white;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+.footer-col p {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+/* Logo section */
+.footer-logo {
+    width: 150px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+/* Divider line */
+hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+/*-------------*/
+/*-------------*/
+/*-------------*/
