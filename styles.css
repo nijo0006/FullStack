@@ -472,20 +472,30 @@ INFO
 
 .biascaseintro h3 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 25px;
     color: rgb(0, 56, 168);
     font-size: 20px;
+    font-weight: bold;
+}
+
+.why-are-women-necesary h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.why-are-women-necesary p{
     font-style: italic;
-    font-weight: lighter;
 }
 
 .women-biascase {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin: 100px;
+
 }
 
 .why-are-women-necesary {
@@ -931,26 +941,25 @@ INFO
    ------------------------------ */
 
 .messageboard-content{
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .messageboard-title {
     display: flex;
     justify-content: center;
-    padding-top: 25px;
     color: rgb(0, 56, 168);
 }
 
 .messageboard-text {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
     color: rgb(0, 56, 168);
     font-size: 15px;
+    font-style: italic;
+    font-weight: lighter;
 }
 
 .messageboard-all {
-
     margin-bottom: 80px;
     display: flex;
     justify-content: center;
@@ -1120,6 +1129,8 @@ INFO
 }
 
 /* ---------------- NEWSLETTER ---------------- */
+
+
 
 .newsletter-section {
     display: flex;
