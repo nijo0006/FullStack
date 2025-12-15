@@ -16,11 +16,12 @@ body {
 h1 female perspective + logo
 -----------------------------------*/
 
-
+/* FEMALE PERSPECTIVE LOGO + TEKST */
 h1.logo {
     margin: 0;
 }
 
+/*  FEMALE PERSPECTIVE LOGO + TEKST  LINKS*/
 h1.logo a {
     display: flex;
     align-items: center;
@@ -31,11 +32,14 @@ h1.logo a {
     line-height: 1.1;
 }
 
+
+/* logo-billedet */
 .logo-img {
     width: 60px;
     height: auto;
 }
 
+/*  */
 .logo-text {
     font-size: 20px;
     line-height: 1.1;
