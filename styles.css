@@ -263,6 +263,7 @@ header punkter
     width: 100%;
     height: auto;
 }
+
 .frontpage {
     position: relative;
     margin-bottom: 80px;
@@ -314,7 +315,8 @@ INFO
     color: rgb(0, 56, 168);
     padding-bottom: 30px;
 }
-#info-text{
+
+#info-text {
     display: flex;
     justify-content: center;
     padding: 20px 50px 30px 50px;
@@ -359,7 +361,8 @@ INFO
     justify-content: center;
     align-items: center;
 }
-.circle-container{
+
+.circle-container {
     padding-bottom: 50px;
 }
 
@@ -436,6 +439,7 @@ INFO
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .female-percentage {
     margin-top: 15px;
     font-size: 15px;
@@ -479,14 +483,14 @@ INFO
     font-weight: bold;
 }
 
-.why-are-women-necesary h3{
+.why-are-women-necesary h3 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
 }
 
-.why-are-women-necesary p{
+.why-are-women-necesary p {
     font-style: italic;
 }
 
@@ -619,26 +623,27 @@ INFO
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    position: relative;   /** Allows pseudo-elements to be positioned inside */
+    position: relative; /** Allows pseudo-elements to be positioned inside */
 }
 
 /* --- TIMELINE LIST --- */
 /** The main timeline list */
 .timeline {
-    list-style: none;     /** Removes default list bullets */
+    list-style: none; /** Removes default list bullets */
     margin: 0;
     padding: 0;
-    position: relative;   /** Enables positioning of the vertical line */
+    position: relative; /** Enables positioning of the vertical line */
 }
 
 /* --- VERTICAL TIMELINE LINE --- */
 /** Creates the central vertical line */
 .timeline::before {
-    content: "";                                 /** Required for pseudo-element */
-    position: absolute;                           /** Positions element relative */
-    top: 0; bottom: 0;                            /** Stretch full height */
-    left: 50%;                                    /** Center horizontally */
-    width: 5px;                                   /** Line thickness */
+    content: ""; /** Required for pseudo-element */
+    position: absolute; /** Positions element relative */
+    top: 0;
+    bottom: 0; /** Stretch full height */
+    left: 50%; /** Center horizontally */
+    width: 5px; /** Line thickness */
     background: rgba(217, 221, 255);
     transform: translateX(-50%);
 }
@@ -649,40 +654,49 @@ INFO
     align-items: flex-start;
     width: 50%;
     padding: 25px 45px;
-    position: relative;        /** Needed for positioning the circle */
+    position: relative; /** Needed for positioning the circle */
 }
 
 /* Alternate layout: left + right side */
-.timeline li:nth-child(odd) { left: 0; }        /** Odd = left side */
-.timeline li:nth-child(even) { left: 50%; }     /** Even = right side */
+.timeline li:nth-child(odd) {
+    left: 0;
+}
+
+/** Odd = left side */
+.timeline li:nth-child(even) {
+    left: 50%;
+}
+
+/** Even = right side */
 
 /* --- IMAGE IN TIMELINE --- */
 /** Image used inside a timeline entry */
 .timeline-img {
     width: 140px;
     border-radius: 10px;
-    flex-shrink: 0;            /** Prevents distortion */
+    flex-shrink: 0; /** Prevents distortion */
     padding-bottom: 10px;
 }
 
 /* --- MARKER DOT --- */
 /** Circle indicator for each timeline item */
 .timeline li::before {
-    content: "";                                /** Makes pseudo-element visible */
-    position: absolute;                          /** Absolute inside <li> */
+    content: ""; /** Makes pseudo-element visible */
+    position: absolute; /** Absolute inside <li> */
     top: 28px;
-    width: 22px; height: 22px;
+    width: 22px;
+    height: 22px;
     background: rgb(0, 56, 168);
-    border: 4px solid rgb(0, 56, 168);           /** Blue outline */
+    border: 4px solid rgb(0, 56, 168); /** Blue outline */
     border-radius: 50%;
-    z-index: 10;                                 /** Above background */
-    left: calc(100% - 10px);                     /** Near center line */
-    transform: translateX(-50%);                 /** Center alignment */
+    z-index: 10; /** Above background */
+    left: calc(100% - 10px); /** Near center line */
+    transform: translateX(-50%); /** Center alignment */
 }
 
 /* Adjust marker for even items */
 .timeline li:nth-child(even)::before {
-    left: -10px;   /** Moves dot to match right-side items */
+    left: -10px; /** Moves dot to match right-side items */
 }
 
 /* --- CONTENT BLOCK STYLING --- */
@@ -693,7 +707,7 @@ INFO
     border-radius: 10px;
     margin-bottom: 15px;
     color: #4B2E2A;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
 .small-title-timeline {
@@ -704,24 +718,24 @@ INFO
     color: #4B2E2A;
     font-style: italic;
     font-weight: bold;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
 /** Styles <small> text similarly */
 .timeline li small {
-    display: inline-block;                     /** Inline-block for padding */
+    display: inline-block; /** Inline-block for padding */
     background: rgba(217, 221, 255);
     padding: 18px 22px;
     border-radius: 10px;
     margin-bottom: 15px;
     color: #4B2E2A;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* --- TITLE LABEL --- */
 /** Section titles for each timeline item */
 .timeline li .title {
-    display: inline-block;                      /** Fit-to-content box */
+    display: inline-block; /** Fit-to-content box */
     background: rgb(0, 56, 168);
     color: rgba(217, 221, 255);
     padding: 20px 18px;
@@ -746,7 +760,7 @@ INFO
     width: 110px;
     height: auto;
     border-radius: 10px;
-    flex-shrink: 0;           /** Prevents deformation */
+    flex-shrink: 0; /** Prevents deformation */
 }
 
 
@@ -755,13 +769,13 @@ INFO
  ------------------------*/
 
 /*------Rollemodeller + videoer-------*/
-.women-in-IT{
+.women-in-IT {
     padding: 60px;
     background: #e8e8ff;
 }
 
 .video-students-container,
-.video-workers-container{
+.video-workers-container {
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -769,7 +783,7 @@ INFO
 }
 
 /* TITLER */
-.women-in-IT h2{
+.women-in-IT h2 {
     text-align: center;
     font-size: 28px;
     color: rgb(0, 56, 168);
@@ -777,7 +791,7 @@ INFO
     font-weight: 500;
 }
 
-.women-in-IT h3{
+.women-in-IT h3 {
     font-size: 20px;
     font-weight: 500;
     color: rgb(0, 56, 168);
@@ -785,24 +799,24 @@ INFO
     margin-bottom: 25px;
 }
 
-.women-in-IT p{
+.women-in-IT p {
     color: rgb(0, 56, 168);
     border-bottom: solid;
     margin-bottom: 25px;
 }
 
 /* VIDEOER – DEN ENKLE LØSNING */
-.video-container{
+.video-container {
     position: relative;
-    width: 260px;       /* Ens bredde */
-    height: 450px;      /* Ens højde */
-    overflow: hidden;   /* Beskær videoen */
+    width: 260px; /* Ens bredde */
+    height: 450px; /* Ens højde */
+    overflow: hidden; /* Beskær videoen */
 }
 
-.video{
+.video {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* Gør alle videoer samme størrelse */
+    object-fit: cover; /* Gør alle videoer samme størrelse */
     cursor: pointer;
 }
 
@@ -936,7 +950,7 @@ INFO
    OPSLAGSTAVLE
    ------------------------------ */
 
-.messageboard-content{
+.messageboard-content {
     margin-top: 40px;
 }
 
@@ -1006,6 +1020,8 @@ INFO
     background-color: #fff98c;
 }
 
+
+/* Farveskift mellem post-its */
 .postit:nth-child(even) {
     background-color: #ffc9e0;
 }
@@ -1023,12 +1039,16 @@ INFO
     border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
+/*------de røde tegnestifter------*/
 .red {
     background-color: #e80404;
 }
 
 
 /* ---- PLACERING AF DE 12 POST-ITS ---- */
+
+
+/*------post-it 1- SHE SHARP------*/
 .p1 {
     top: 13%;
     left: 10%;
@@ -1036,6 +1056,7 @@ INFO
     width: 190px;
 }
 
+/*------post-it 2- redi school denmark------*/
 .p2 {
     top: 15%;
     left: 30%;
@@ -1043,6 +1064,7 @@ INFO
     width: 250px;
 }
 
+/*------post-it 3- it camp for unde kvinder------*/
 .p3 {
     top: 17%;
     left: 55%;
@@ -1050,6 +1072,7 @@ INFO
     width: 250px;
 }
 
+/*------post-it 4- coding cafe for unge kvinder------*/
 .p4 {
     top: 16%;
     left: 78%;
@@ -1057,6 +1080,7 @@ INFO
     width: 250px;
 }
 
+/*------post-it 5- techwomen cph------*/
 .p5 {
     top: 38%;
     left: 8%;
@@ -1064,6 +1088,7 @@ INFO
     width: 300px;
 }
 
+/*------post-it 6- women tech makers------*/
 .p6 {
     top: 41%;
     left: 32%;
@@ -1071,6 +1096,7 @@ INFO
     width: 250px;
 }
 
+/*------post-it 7- wonder coders------*/
 .p7 {
     top: 43%;
     left: 57%;
@@ -1078,6 +1104,7 @@ INFO
     width: 290px;
 }
 
+/*------post-it 8- code first girls------*/
 .p8 {
     top: 40%;
     left: 78%;
@@ -1085,6 +1112,7 @@ INFO
     width: 250px;
 }
 
+/*------post-it 9- girls who code------*/
 .p9 {
     top: 70%;
     left: 12%;
@@ -1092,6 +1120,7 @@ INFO
     width: 250px;
 }
 
+/*------post-it 10- kvinde kend din kode------*/
 .p10 {
     top: 67%;
     left: 36%;
@@ -1099,6 +1128,7 @@ INFO
     width: 220px;
 }
 
+/*------post-it 11-coding pirates------*/
 .p11 {
     top: 73%;
     left: 55%;
@@ -1106,6 +1136,7 @@ INFO
     width: 250px;
 }
 
+/*------post-it 12-women learn to code------*/
 .p12 {
     top: 69%;
     left: 75%;
@@ -1118,6 +1149,7 @@ INFO
    FOOTER
    ------------------------------ */
 
+/*-------------*/
 .footer {
     font-family: Arial, sans-serif;
     background: #fff;
@@ -1127,7 +1159,7 @@ INFO
 /* ---------------- NEWSLETTER ---------------- */
 
 
-
+/*-------------*/
 .newsletter-section {
     display: flex;
     justify-content: space-between;
@@ -1135,26 +1167,31 @@ INFO
     background-color: #fcebf9;
 }
 
+/*-------------*/
 .newsletter-text {
     max-width: 600px;
     margin: 80px;
 }
 
+/*-------------*/
 .newsletter-text h2 {
     color: rgb(0, 56, 168);
     margin-bottom: 20px;
 }
 
+/*-------------*/
 .newsletter-text strong {
     display: block;
     font-size: 17px;
     margin-bottom: 15px;
 }
 
+/*-------------*/
 .newsletter-text a {
     color: rgb(0, 56, 168);
 }
 
+/*-------------*/
 .newsletter-form {
     background: #fafafa;
     margin: 80px;
@@ -1167,6 +1204,7 @@ INFO
     border: 1px solid #ececec;
 }
 
+/*-------------*/
 .newsletter-form input {
     padding: 15px;
     border-radius: 30px;
@@ -1174,6 +1212,7 @@ INFO
     font-size: 14px;
 }
 
+/*-------------*/
 .newsletter-form button {
     padding: 15px;
     border: none;
@@ -1187,6 +1226,7 @@ INFO
 
 /* ---------------- COLUMNS ---------------- */
 
+/*-------------*/
 .footer-columns {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1195,11 +1235,13 @@ INFO
     color: #fcebf9;
 }
 
+/*-------------*/
 .footer-col h3 {
     margin: 40px;
     color: #fcebf9;
 }
 
+/*-------------*/
 .footer-col a {
     color: white;
     margin-left: 40px;
@@ -1208,10 +1250,12 @@ INFO
     display: block;
 }
 
+/*-------------*/
 .footer-col a:hover {
     text-decoration: underline;
 }
 
+/*-------------*/
 .footer-col p {
     margin-left: 40px;
     margin-bottom: 20px;
