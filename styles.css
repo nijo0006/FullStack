@@ -695,13 +695,23 @@ INFO
 
 /* --- CONTENT BLOCK STYLING --- */
 /** Styles headings and paragraphs */
-.timeline li h3,
 .timeline li p {
     background: rgba(217, 221, 255);
     padding: 18px 22px;
     border-radius: 10px;
     margin-bottom: 15px;
     color: #4B2E2A;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.small-title-timeline {
+    background: rgba(217, 221, 255);
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #4B2E2A;
+    font-style: italic;
+    font-weight: bold;
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 }
 
