@@ -979,7 +979,7 @@ INFO
 .messageboard {
     min-width: 1400px;
     min-height: 900px;
-    background-image: url("../photos/opslagstavle.png");
+    background-image: url("photos/opslagstavle.png");
     background-size: cover; /* fylder hele containeren */
     background-position: center; /* centrerer billedet */
     background-repeat: no-repeat;
