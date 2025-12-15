@@ -1283,3 +1283,389 @@ hr {
 /*-------------*/
 /*-------------*/
 /*-------------*/
+
+@media (max-width: 900px) {
+
+    /* generelt */
+    body {
+        background-color: white;
+    }
+
+    /* ------------------------------
+       HEADER / NAV
+       ------------------------------ */
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    h1.logo a {
+        justify-content: center;
+        font-size: 24px;
+    }
+
+    .logo-img {
+        width: 50px;
+    }
+
+    .logo-text {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    /* ------------------------------
+       FORSIDE (tekst + bobler + bokse)
+       ------------------------------ */
+    .frontpage-quotebold {
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 32px;
+    }
+
+    .frontpage-quoteitalic {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 28px;
+    }
+
+    .tagline-quote {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+    }
+
+    .circle-containers-frontpage {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding-bottom: 30px;
+    }
+
+    .circle-container-frontpage1,
+    .circle-container-frontpage2 {
+        width: 140px;
+        height: 140px;
+        padding: 0;
+    }
+
+    .circle-container-frontpage1 h4,
+    .circle-container-frontpage2 h4 {
+        font-size: 55px;
+    }
+
+    .small-text-boxes {
+        position: static;
+        transform: none;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .text-box1,
+    .text-box2,
+    .text-box3 {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .frontpage {
+        margin-bottom: 40px;
+    }
+
+    .frontpage-whitespace {
+        margin: 25px 15px;
+        padding: 25px 20px;
+    }
+
+    .frontpage-whitespace h3 {
+        font-size: 24px;
+    }
+
+    /* ------------------------------
+       INFO CIRKLER
+       ------------------------------ */
+    .circle-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 25px;
+        overflow-x: visible;
+    }
+
+    .circle-container1,
+    .circle-container2,
+    .circle-container3,
+    .circle-container4,
+    .circle-container5 {
+        width: 240px;
+        height: 240px;
+        padding: 0;
+    }
+
+    /* ------------------------------
+       CHARTS
+       ------------------------------ */
+    #charts {
+        margin: 30px 15px 60px 15px;
+    }
+
+    .chart-container {
+        padding: 20px 10px 40px 10px;
+        gap: 15px;
+    }
+
+    .charts-box h2,
+    #chart-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /*KØNSFORDELING*/
+
+    .gender-grid {
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .female-percentage {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    /* samler tekst + ikoner pænere */
+    .chart-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /*ADGANGSKVOTIENT*/
+
+    #admissionValue {
+        font-size: 36px;
+        line-height: 1.1;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    /* fjerner for meget luft */
+    .chart-container {
+        padding: 20px 15px 40px 15px;
+    }
+
+
+    /* ------------------------------
+       BIAS CASES (tekst + billede)
+       ------------------------------ */
+    .women-biascase {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-are-women-necesary {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .when-women-are-needed,
+    .when-women-participate {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        margin: 20px 15px;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .biascase-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .biascase-photo img {
+        max-width: 100%;
+    }
+
+    /* ------------------------------
+       TIMELINE -> 1 kolonne
+       ------------------------------ */
+    .timeline::before {
+        left: 20px;
+        transform: none;
+    }
+
+    .timeline li {
+        width: 100%;
+        left: 0 !important;
+        padding: 25px 15px 25px 55px;
+    }
+
+    .timeline li::before {
+        left: 20px;
+        transform: none;
+    }
+
+    .title-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .title-row .timeline-img {
+        width: 160px;
+    }
+
+    /* ------------------------------
+       VIDEOER (rollemodeller)
+       ------------------------------ */
+    .women-in-IT {
+        padding: 30px 15px;
+    }
+
+    .video-students-container,
+    .video-workers-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 30px 10px;
+    }
+
+    .video-container {
+        width: 100%;
+        max-width: 320px;
+        height: 520px;
+    }
+
+    .play-button {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* ------------------------------
+       MAP
+       ------------------------------ */
+    #map {
+        width: 92%;
+        height: 380px;
+    }
+
+    /* ------------------------------
+       UDDANNELSER GRID
+       ------------------------------ */
+    .education-container {
+        padding: 0 15px;
+    }
+
+    .square-cph1,
+    .square-cph2,
+    .square-jutland1,
+    .square-jutland2,
+    .square-jutland3,
+    .square-bornholm1,
+    .square-fyn1 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .square-wrapper {
+        width: 100%;
+        max-width: 520px;
+        height: auto;
+        padding-bottom: 25px;
+    }
+
+    .uddannelser-liste {
+        position: static;
+        padding: 0 20px 20px 35px;
+        margin-top: 10px;
+    }
+
+    /* ------------------------------
+    FOOTER
+    ------------------------------ */
+    .newsletter-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .newsletter-text,
+    .newsletter-form {
+        margin: 0;
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .footer-columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+
+    .footer-col h3,
+    .footer-col a,
+    .footer-col p,
+    .footer-logo {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* ------------------------------
+        OPSLAGSTAVLE
+       ------------------------------ */
+    /* gør at opslagstavlen ikke tvinger en kæmpe bredde */
+    .messageboard-all {
+        padding: 0 15px;
+    }
+
+    .messageboard {
+        min-width: 0;
+        min-height: 0;
+        width: 100%;
+        height: auto;
+        background-size: contain;   /* så billedet ikke bliver weird*/
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding: 20px 0 40px 0;     /* luft til indhold */
+    }
+
+    /* post-its bliver til en pæn “liste” */
+    .postit {
+        position: static;
+        transform: none;
+        width: 100%;
+        max-width: 520px;
+        margin: 14px auto;
+        padding: 18px 16px;
+        line-height: 1.6;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    /*fjern tegnestifter*/
+    .pin {
+        display: none;
+    }
+}
