@@ -983,7 +983,6 @@ INFO
     background-size: cover; /* fylder hele containeren */
     background-position: center; /* centrerer billedet */
     background-repeat: no-repeat;
-
     position: relative;
 }
 
