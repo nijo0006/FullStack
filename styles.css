@@ -130,7 +130,6 @@ header punkter
 .circle-containers-frontpage {
     display: flex;
     justify-content: space-evenly;
-    gap: 20px;
     padding-bottom: 50px;
     padding-top: 10px;
 }
@@ -177,7 +176,6 @@ header punkter
     background-color: #fcebf9;;
     color: rgb(239, 112, 166);
     white-space: nowrap;
-    animation-duration: 8s;
 }
 
 /* boble-1 */
@@ -187,7 +185,6 @@ header punkter
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, #fcebf9, rgb(248, 230, 237));
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    animation: float 6s ease-in-out infinite;
 }
 
 /* boble-2 */
@@ -197,27 +194,11 @@ header punkter
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, #fcebf9, rgb(248, 230, 237));
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    animation: float 6s ease-in-out infinite;
 }
-
-/* Simpel svæve-animation */
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-12px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
 
 .tagline {
     padding-bottom: 5px;
 }
-
 
 .tagline-quote {
     display: flex;
@@ -229,7 +210,6 @@ header punkter
     font-size: 30px;
     font-style: italic;
     font-weight: lighter;
-
 }
 
 .index-title {
@@ -265,7 +245,6 @@ header punkter
 .info {
     padding-top: 20px;
     font-size: 12px;
-
 }
 
 .quote-link {
@@ -276,40 +255,49 @@ header punkter
     cursor: pointer;
 }
 
-
 .image_index img {
     width: 100%;
-    height: 80%;
-    display: block; /* prevents bottom gap */
+    height: auto;
+}
+.frontpage {
+    position: relative;
+    margin-bottom: 80px;
 }
 
 .small-text-boxes {
     display: flex;
-    justify-content: center;
-    gap: 50px; /* mellemrum mellem bokse */
-    margin-top: -400px; /* ✨ rykkér bokse op på billedet */
+    align-items: center;
+    position: absolute;
+    gap: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* sætter det hele i midten */
 }
-
 
 .frontpage-whitespace {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px 100px;
+    background: linear-gradient(to bottom right, #fdeaff 0%, #ffffff 70%);
+    border-radius: 20px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
     color: rgb(0, 56, 168);
-    padding: 150px;
-    margin: 80px;
-    width: 1200px;
-}
-
-.frontpage-whitespace p {
-    padding-top: 20px;
-    color: rgb(0, 56, 168);
+    text-align: center;
 }
 
 .frontpage-whitespace h3 {
-    padding-top: 80px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(0, 56, 168);
+    margin-bottom: 20px;
+    position: relative;
 }
 
+.frontpage-whitespace p {
+    font-size: 17px;
+    color: rgb(0, 56, 168);
+    margin-top: 20px;
+}
 
 /*-------------------------------------
 INFO
