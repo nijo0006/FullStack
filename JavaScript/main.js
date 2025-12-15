@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
 
-    const response = await fetch("json/uddannelser.json");
+    const response = await fetch("../json/uddannelser.json");
     const allData = await response.json();
 
     const cards = document.querySelectorAll(".square-wrapper");
