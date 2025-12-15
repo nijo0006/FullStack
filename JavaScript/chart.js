@@ -1,5 +1,5 @@
 
-// Objekter med navn, kønsfordeling og adgangkvotient - det er et stort objekt med under-objekter
+// Objekter med navn, kønsfordeling og adgangkvotient - det er ét stort objekt med under-objekter
 
 const uddannelser = {
     itArkitektur: {
@@ -29,40 +29,54 @@ const uddannelser = {
     },
 };
 
-let genderChart; // Variabel til et kønsdiagram
+// Variabel til et kønsdiagram
+let genderChart;
 
 
-// Funktion der viser data for den valgte uddannelse
+// Hovedfunktion der opdaterer visningen, baseret på hvilken uddannelse brugeren klikker på
+function showCharts(key) {
 
-function showCharts(key) { // Slår den valgte uddannelsesnøgle op i dataobjektet.
-    const data = uddannelser[key];  // key er eksempelvis "datamatiker", og data bliver hele objektet for den uddannelse.
+    // Slår den valgte uddannelses nøgle op i data-objektet
+    // fx key = "datamatiker"
+    const data = uddannelser[key];
 
-    function renderGenderGrid(percentage) {   // Funktion der bygger et grid med i alt 20 kønsikoner
+    // ----------------------------------------
+    // Funktion der visualiserer kønsfordeling
+    // ----------------------------------------
+    function renderGenderGrid(percentage) {
+
+        // Finder HTML-elementet med id="genderGrid"
+        // Dette er containeren, som ikonerne indsættes i
         const grid = document.getElementById('genderGrid');
-        grid.innerHTML = ""; // Fjerner tidligere ikoner, så grid gendannes fra bunden
 
-        const totalIcons = 20;  // Et fast antal ikoner for at gøre visualiseringen ensartet
+        // Rydder indholdet i containeren,
+        // så tidligere ikoner fjernes før nye tilføjes
+        grid.innerHTML = "";
 
-        // Beregner hvor mange kvindeikoner der skal vises:
-        // percentage (fx 28%) omregnes til hvor stor en del af de 20 ikoner det svarer til.
+        // Fast antal ikoner for ensartet visualisering
+        const totalIcons = 20;
+
+        // Beregner hvor mange af ikonerne der skal være kvinder
+        // percentage (fx 28) omregnes til en andel af de 20 ikoner
         const femaleCount = Math.round(totalIcons * (percentage / 100));
 
-        // Resterende ikoner bliver mandeikoner.
+        // Resten af ikonerne repræsenterer mænd
         const maleCount = totalIcons - femaleCount;
 
-        // Tekstfelt opdateres, så det viser fx "28% kvinder".
+        // Opdaterer tekstfeltet i DOM’en,
+        // så brugeren kan se den præcise procent
         document.getElementById("femalePercentage").textContent =
             Math.round(percentage) + "% kvinder";
 
-        // Opretter et DOM-element for hvert kvindeikon.
-        // Ikonerne får klasser, der kan styles via CSS (female = lyserød, male = grå osv.)
+        // Opretter ét DOM-element for hvert kvindeikon
+        // Elementerne får CSS-klasser, som styrer udseende og farve
         for (let i = 0; i < femaleCount; i++) {
-            const icon = document.createElement("div");
-            icon.classList.add("gender-icon", "female");
-            grid.appendChild(icon);
+            const icon = document.createElement("div"); // Opretter nyt <div>-element
+            icon.classList.add("gender-icon", "female"); // Tilføjer CSS-klasser
+            grid.appendChild(icon); // Indsætter elementet i genderGrid
         }
 
-        // Samme princip for mandeikoner.
+        // Opretter mandeikoner på samme måde
         for (let i = 0; i < maleCount; i++) {
             const icon = document.createElement("div");
             icon.classList.add("gender-icon", "male");
@@ -70,34 +84,35 @@ function showCharts(key) { // Slår den valgte uddannelsesnøgle op i dataobjekt
         }
     }
 
-    // Kalder funktionen med procentdelen for kvinder.
-    // Mandeprocenten kræver ikke givet input, da den er implicit.
+    // Kalder funktionen og sender kvindeprocenten med
+    // Mandeprocenten udregnes automatisk ud fra resten
     renderGenderGrid(data.gender.Kvinder);
 
     // ----------------------------------------
-    // Viser sektionen med diagrammer (hvis den evt. er skjult fra start)
+    // Gør diagram-sektionen synlig
     // ----------------------------------------
     document.getElementById("charts").style.display = "block";
 
-    // Opdaterer overskriften på visningsboksen
+    // Opdaterer overskriften, så den matcher den valgte uddannelse
     document.getElementById("chart-title").textContent = data.name;
 
     // ----------------------------------------
     // Adgangskvotient
     // ----------------------------------------
+
+    // Henter adgangskvotienten fra data
     const kvotient = data.adgang[0].kvotient;
 
-    // If-sætningen afgør, hvad der skal vises:
-    // Hvis kvotienten er større end 0 → vis tallet.
-    // Hvis kvotient = 0 → fortolkningen er "Alle optaget", og denne tekst vises i stedet.
+    // Opdaterer DOM-elementet med enten:
+    // - kvotienttallet, hvis det findes
+    // - teksten "Alle optaget", hvis kvotienten er 0
     document.getElementById("admissionValue").textContent =
         kvotient > 0
-            ? kvotient               // Udtryk A: vis det faktiske kvotienttal
-            : "Alle optaget";        // Udtryk B: fallback-tekst, når 0 bruges som markering for åbent optag
+            ? kvotient
+            : "Alle optaget";
 
     // ----------------------------------------
-    // Her kan Chart.js-opsætning indsættes, hvis der ønskes grafer.
-    // genderChart-variablen ovenfor er reserveret til formålet.
+    // Her kan evt. Chart.js-diagrammer tilføjes senere
     // ----------------------------------------
 }
 
@@ -106,17 +121,16 @@ function showCharts(key) { // Slår den valgte uddannelsesnøgle op i dataobjekt
 // -----------------------------
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Finder alle bobler i .circle-container.
-    // Hver boble antages at have en position, der matcher rækkefølgen i Object.keys(uddannelser).
+    // Finder alle klikbare bobler i circle-container
     document.querySelectorAll(".circle-container div").forEach((el, i) => {
 
-        // Henter alle nøglerne fra uddannelsesdataene, fx:
-        // ["itArkitektur", "datamatiker", "cybersikkerhed", ...]
+        // Henter alle nøgler fra uddannelses-objektet
+        // Rækkefølgen svarer til boblernes rækkefølge i HTML
         const keys = Object.keys(uddannelser);
 
-        // Bind klik-event:
-        // Når boblen nummer i klikkes, kaldes showCharts med nøgle nummer i.
-        // Eksempel: klik på boble 1 → showCharts("datamatiker")
+        // Binder et klik-event til hver boble
+        // Når brugeren klikker, kaldes showCharts
+        // med den tilhørende uddannelses-nøgle
         el.addEventListener("click", () => showCharts(keys[i]));
     });
 });
