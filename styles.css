@@ -834,6 +834,13 @@ INFO
    ------------------------------ */
 /* map */
 
+#info-map {
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+    color: rgb(0, 56, 168);
+}
+
 .map-wrapper {
     display: flex;
     justify-content: center;
