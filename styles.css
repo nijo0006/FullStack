@@ -541,6 +541,7 @@ INFO
     align-items: center;
     padding-top: 25px;
     color: rgb(0, 56, 168);
+    margin: 100px;
 }
 
 /* Universal layout for all bias cases */
