@@ -21,7 +21,7 @@ h1.logo {
     margin: 0;
 }
 
-/*  FEMALE PERSPECTIVE LOGO + TEKST  LINKS*/
+/*  FEMALE PERSPECTIVE LOGO + TEKST  LINK*/
 h1.logo a {
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@ h1.logo a {
     height: auto;
 }
 
-/*  */
+/* logo-text */
 .logo-text {
     font-size: 20px;
     line-height: 1.1;
@@ -49,6 +49,8 @@ h1.logo a {
 /*-----------------------------------
 header punkter
  -----------------------------------*/
+
+/* header */
 header {
 
     display: flex;
@@ -62,6 +64,7 @@ header {
     justify-content: space-between;
 }
 
+/* ul i navigation */
 nav ul {
     display: flex;
     gap: 30px; /* afstand mellem links */
@@ -70,6 +73,7 @@ nav ul {
     margin: 0;
 }
 
+/* listen i navigationen links */
 nav ul li a {
     text-decoration: none;
     color: rgb(0, 56, 168);
@@ -79,36 +83,27 @@ nav ul li a {
     border-radius: 60px;
 }
 
+/* hover ved pil på links i listen i navigation */
 nav ul li a:hover {
     font-weight: bold;
     transform: scale(1.05);
 }
 
 /*to make the "active" tag bold when on that specific page*/
-
 nav ul li a.active {
     font-weight: bold;
-}
-
-/*-----------------------------------
-header punkter
- -----------------------------------*/
-
-.timeline-header {
-    text-align: center;
-    padding: 1.4rem 0;
-    background-color: whitesmoke;
-    font-weight: 600;
 }
 
 /* ------------------------------
    FORSIDE
    ------------------------------ */
 
+/* Section med citat og procent */
 .frontpage1st-section {
     background-color: white;
 }
 
+/* tag plads i fremtiden*/
 .frontpage-quotebold {
     display: flex;
     justify-content: flex-start;
@@ -119,6 +114,7 @@ header punkter
     line-height: 1;
 }
 
+/*Byg morgendagens teknologi — IT begynder med dig.*/
 .frontpage-quoteitalic {
     display: flex;
     justify-content: flex-start;
@@ -131,6 +127,7 @@ header punkter
     line-height: 1;
 }
 
+/*procent-containere*/
 .circle-containers-frontpage {
     display: flex;
     justify-content: space-evenly;
@@ -138,6 +135,7 @@ header punkter
     padding-top: 10px;
 }
 
+/*procent-container- kvinder i it*/
 .circle-container-frontpage1 {
     flex-direction: column;
     display: flex;
@@ -167,6 +165,7 @@ header punkter
     justify-content: center;
 }
 
+/*procent-container- studerende i it*/
 .circle-container-frontpage2 {
     flex-direction: column;
     display: flex;
@@ -200,6 +199,7 @@ header punkter
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
+/*tekst under bobler*/
 .tagline {
     padding-bottom: 5px;
 }
@@ -216,14 +216,9 @@ header punkter
     font-weight: lighter;
 }
 
-.index-title {
-    display: flex;
-    justify-content: center;
-    padding-top: 25px;
-    padding-bottom: 100px;
-    color: rgb(0, 56, 168);
-}
 
+
+/* hver enkelt tekst-boks over billedet */
 .text-box1, .text-box2, .text-box3 {
     flex-direction: column;
     display: flex;
@@ -239,6 +234,7 @@ header punkter
     font-size: 20px;
 }
 
+/*tekst-bokse HOVER med links over billedet */
 .text-box1 p:hover,
 .text-box2 p:hover,
 .text-box3 p:hover {
@@ -246,29 +242,33 @@ header punkter
     transition: 0.2s ease;
 }
 
+/*info på hvert quote nederst i boksene*/
 .info {
     padding-top: 20px;
     font-size: 12px;
 }
-
+/*links til info på hvert quote nederst i boksene*/
 .quote-link {
     text-decoration: none; /* ingen blå understregning */
 }
 
+/* hover til links på info på hvert quote nederst i boksene*/
 .quote-link:hover .text-box1 {
     cursor: pointer;
 }
 
+/*forside-billede af kvinde med computer*/
 .image_index img {
     width: 100%;
     height: auto;
 }
-
+/*forside-billede*/
 .frontpage {
     position: relative;
     margin-bottom: 80px;
 }
 
+/*tekst bokse på forsiden*/
 .small-text-boxes {
     display: flex;
     align-items: center;
@@ -279,6 +279,7 @@ header punkter
     transform: translate(-50%, -50%); /* sætter det hele i midten */
 }
 
+/*info på hvert quote nederst i boksene*/
 .frontpage-whitespace {
     max-width: 900px;
     margin: 50px auto;
@@ -290,6 +291,7 @@ header punkter
     text-align: center;
 }
 
+/*overskrift- hvad kan du finde på female perspective*/
 .frontpage-whitespace h3 {
     font-size: 30px;
     font-weight: 600;
@@ -298,6 +300,8 @@ header punkter
     position: relative;
 }
 
+
+/*tekst- hvad kan du finde på female perspective*/
 .frontpage-whitespace p {
     font-size: 17px;
     color: rgb(0, 56, 168);
