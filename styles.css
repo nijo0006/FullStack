@@ -452,11 +452,11 @@ INFO
 
 /* Farver */
 .gender-icon.female {
-    background-image: url('../photos/pink-icon.png');
+    background-image: url('photos/pink-icon.png');
 }
 
 .gender-icon.male {
-    background-image: url('../photos/grey-icon.png');
+    background-image: url('photos/grey-icon.png');
 }
 
 
