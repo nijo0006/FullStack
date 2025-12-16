@@ -416,6 +416,7 @@ INFO
     overflow-x: auto; /* scroll hvis for smal skærm */
 }
 
+/*Wrapper for hvert chart: giver fast bredde og centrerer indhold*/
 .chart-wrapper {
     flex: 500px; /* fast bredde pr. chart */
     display: flex;
@@ -425,11 +426,13 @@ INFO
     min-width: 250px;
 }
 
+/* Sikrer at Chart.js canvas fylder hele pladsen */
 .chart-wrapper canvas {
     width: 100% !important;
     height: 100% !important; /* fylder hele wrapperen */
 }
 
+/* Adgangskvotientens tal: stor, pink og tydelig tekst */
 #admissionValue { /*   adgangskvotient   */
     font-size: 40px;
     color: deeppink;
@@ -438,6 +441,7 @@ INFO
 
 }
 
+/* Grid til kønsikoner: viser ikoner i et 5-kolonne layout */
 .gender-grid {
     padding-top: 20px;
     display: grid;
@@ -445,6 +449,7 @@ INFO
     gap: 5px;
 }
 
+/*kønsikoner: fast størrelse og centreret billede */
 .gender-icon {
     width: 30px;
     height: 30px;
@@ -453,6 +458,7 @@ INFO
     background-repeat: no-repeat;
 }
 
+/* Procenttal for kvinder: pink, fed og centreret tekst */
 .female-percentage {
     margin-top: 15px;
     font-size: 15px;
@@ -463,11 +469,12 @@ INFO
 }
 
 
-/* Farver */
+/* Kvindeikon: pink symbol */
 .gender-icon.female {
     background-image: url('photos/pink-icon.png');
 }
 
+/* Mandikon: gråt symbol */
 .gender-icon.male {
     background-image: url('photos/grey-icon.png');
 }
@@ -477,6 +484,7 @@ INFO
    BIAS CASES
    ------------------------------ */
 
+/* Introduktionssektion: tekst om bias cases øverst på siden */
 .biascaseintro {
     display: flex;
     justify-content: flex-start;
@@ -486,6 +494,7 @@ INFO
     font-size: 15px;
 }
 
+/* Overskrift i intro: centreret og gjort større/bold */
 .biascaseintro h3 {
     display: flex;
     justify-content: center;
@@ -496,6 +505,7 @@ INFO
     font-weight: bold;
 }
 
+/* Overskrift i “Hvorfor er kvinder nødvendige?”-sektion: stor og centreret */
 .why-are-women-necesary h3 {
     display: flex;
     justify-content: center;
@@ -503,24 +513,25 @@ INFO
     font-size: 25px;
 }
 
+/* Brødtekst i “Hvorfor er kvinder nødvendige?”-sektion: gør teksten kursiv */
 .why-are-women-necesary p {
     font-style: italic;
 }
 
+/* Wrapper for de to bokse (rød/grøn): placerer dem ved siden af hinanden */
 .women-biascase {
     display: flex;
     justify-content: center;
     flex-direction: row;
 
 }
-
+/* Sektion med intro-tekst og bokse: hvid baggrund og venstre padding */
 .why-are-women-necesary {
     background-color: white;
     padding-left: 100px;
-
-
 }
 
+/* De to farvede bokse: centrerer indhold og giver fast størrelse og margin */
 .when-women-are-needed, .when-women-participate {
     flex-direction: column;
     display: flex;
@@ -539,15 +550,18 @@ INFO
     font-weight: lighter;
 }
 
+/* Grøn boks */
 .when-women-participate {
     background-color: rgba(166, 241, 160, 0.45);
 }
 
+/* Rød boks */
 .when-women-are-needed {
     background-color: rgba(246, 155, 155, 0.51);
 }
 
 
+/* BIAS CASES-overskrift: centreret og med stor margin omkring */
 .biascasesh2 {
     display: flex;
     justify-content: center;
@@ -566,17 +580,17 @@ INFO
     width: 100%;
 }
 
-/* Text column */
+/* Tekstkolonne: udfylder tilgængelig horisontal plads */
 .biascase-text {
     flex: 1;
 }
 
-/* Heading above paragraph */
+/* Overskrift i tekstkolonne: giver luft under overskriften */
 .biascase-text h3 {
     margin-bottom: 15px;
 }
 
-/* Image column */
+/* Billedkolonne: sikrer maks bredde og korrekt skalering af billedet */
 .biascase-photo img {
     max-width: 500px;
     width: 100%;
@@ -584,6 +598,7 @@ INFO
     object-fit: cover;
 }
 
+/* Ramme for hver enkelt bias case: kolonnelayout og generel tekststil */
 .biascase1, .biascase2, .biascase3, .biascase4, .biascase5, .biascase6, .biascase7 {
     display: flex;
     justify-content: flex-start;
@@ -593,37 +608,44 @@ INFO
     font-size: 15px;
 }
 
-/* Backgrounds — keep these as they are */
+/* Bias case 1: lyserød baggrund */
 .biascase1 {
     background-color: #fcebf9;
 }
 
+/* Bias case 2: hvid baggrund */
 .biascase2 {
     background-color: white;
 }
 
+/* Bias case 3: mørkeblå baggrund med hvid tekst */
 .biascase3 {
     background-color: rgb(0, 56, 168);
     color: white;
 }
 
+/* Bias case 4: hvid baggrund */
 .biascase4 {
     background-color: white;
 }
 
+/* Bias case 5: lyserød baggrund */
 .biascase5 {
     background-color: #fcebf9;
 }
 
+/* Bias case 6: mørkeblå baggrund med hvid tekst */
 .biascase6 {
     background-color: rgb(0, 56, 168);
     color: white;
 }
 
+/* Bias case 7: hvid baggrund */
 .biascase7 {
     background-color: white;
 }
 
+/* Kildetekst: mindre og kursiv tekst til referencer */
 .biascase-sources {
     font-style: italic;
     font-size: 12px;
@@ -632,25 +654,26 @@ INFO
 /* ------------------------------
    TIMELINE
    ------------------------------ */
-/** Container that wraps the entire timeline */
+
+/* Wrapper for hele tidslinjen: centrerer og begrænser maks bredde */
 .timeline-wrapper {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    position: relative; /** Allows pseudo-elements to be positioned inside */
+    position: relative;
 }
 
-/* --- TIMELINE LIST --- */
-/** The main timeline list */
+
+/* Selve tidslinjelisten: nulstiller standard-liste og gør klar til lodret linje */
 .timeline {
-    list-style: none; /** Removes default list bullets */
+    list-style: none;
     margin: 0;
     padding: 0;
-    position: relative; /** Enables positioning of the vertical line */
+    position: relative;
 }
 
-/* --- VERTICAL TIMELINE LINE --- */
-/** Creates the central vertical line */
+/* Lodret linje i midten af tidslinjen */
+
 .timeline::before {
     content: ""; /** Required for pseudo-element */
     position: absolute; /** Positions element relative */
@@ -662,8 +685,7 @@ INFO
     transform: translateX(-50%);
 }
 
-/* --- TIMELINE ITEMS --- */
-/** Individual timeline event item */
+/* Hvert timeline-element: halvdelen af bredden og med padding omkring indhold */
 .timeline li {
     align-items: flex-start;
     width: 50%;
@@ -671,20 +693,17 @@ INFO
     position: relative; /** Needed for positioning the circle */
 }
 
-/* Alternate layout: left + right side */
+/* Ulige timeline-elementer placeres til venstre */
 .timeline li:nth-child(odd) {
     left: 0;
 }
 
-/** Odd = left side */
+/* Lige timeline-elementer placeres til højre */
 .timeline li:nth-child(even) {
     left: 50%;
 }
 
-/** Even = right side */
-
-/* --- IMAGE IN TIMELINE --- */
-/** Image used inside a timeline entry */
+/* Billeder i tidslinjen: fast bredde og let afrundede hjørner */
 .timeline-img {
     width: 140px;
     border-radius: 10px;
@@ -692,8 +711,7 @@ INFO
     padding-bottom: 10px;
 }
 
-/* --- MARKER DOT --- */
-/** Circle indicator for each timeline item */
+/* Den runde markør ved hvert timeline-punkt */
 .timeline li::before {
     content: ""; /** Makes pseudo-element visible */
     position: absolute; /** Absolute inside <li> */
@@ -708,13 +726,12 @@ INFO
     transform: translateX(-50%); /** Center alignment */
 }
 
-/* Adjust marker for even items */
+/* Justerer markørens placering for højresiden */
 .timeline li:nth-child(even)::before {
     left: -10px; /** Moves dot to match right-side items */
 }
 
-/* --- CONTENT BLOCK STYLING --- */
-/** Styles headings and paragraphs */
+/* Tekstbokse med brødtekst i tidslinjen */
 .timeline li p {
     background: rgba(217, 221, 255);
     padding: 18px 22px;
@@ -724,6 +741,7 @@ INFO
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
+/* Lille undertitel i tidslinjen med kursiv og fremhævet stil */
 .small-title-timeline {
     background: rgba(217, 221, 255);
     padding: 18px 22px;
@@ -735,7 +753,8 @@ INFO
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
-/** Styles <small> text similarly */
+
+/* Små tekstfelter (<small>) får samme bokslay-out som brødtekst */
 .timeline li small {
     display: inline-block; /** Inline-block for padding */
     background: rgba(217, 221, 255);
@@ -746,8 +765,7 @@ INFO
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* --- TITLE LABEL --- */
-/** Section titles for each timeline item */
+/* Tidslinjetitel per person: mørkeblå label med caps og fremhævning */
 .timeline li .title {
     display: inline-block; /** Fit-to-content box */
     background: rgb(0, 56, 168);
@@ -761,15 +779,14 @@ INFO
     letter-spacing: 0.5px;
 }
 
-/* --- IMAGE + TITLE LAYOUT ---- */
-/** Container for aligning image + title horizontally */
+/* Række der holder billede og titel på linje */
 .title-row {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-/** Smaller version of timeline image (inside title row) */
+/* Mindre version af timeline-billedet, når det står i title-row */
 .title-row .timeline-img {
     width: 110px;
     height: auto;
@@ -788,6 +805,7 @@ INFO
     background: #e8e8ff;
 }
 
+/* Videorækker: centrerer og giver afstand mellem video-cards */
 .video-students-container,
 .video-workers-container {
     display: flex;
@@ -796,7 +814,7 @@ INFO
     padding: 60px;
 }
 
-/* TITLER */
+/* Overskrift for rollemodel- og videosektionen */
 .women-in-IT h2 {
     text-align: center;
     font-size: 28px;
@@ -804,7 +822,7 @@ INFO
     font-style: italic;
     font-weight: 500;
 }
-
+/* Underoverskrifter (fx jobtitel) i videosektion */
 .women-in-IT h3 {
     font-size: 20px;
     font-weight: 500;
@@ -813,13 +831,14 @@ INFO
     margin-bottom: 25px;
 }
 
+/* Navne- eller beskrivelsestekst under titler i videosektionen */
 .women-in-IT p {
     color: rgb(0, 56, 168);
     border-bottom: solid;
     margin-bottom: 25px;
 }
 
-/* VIDEOER – DEN ENKLE LØSNING */
+/* Videoboks: fast størrelse og beskæring af video */
 .video-container {
     position: relative;
     width: 260px; /* Ens bredde */
@@ -827,6 +846,7 @@ INFO
     overflow: hidden; /* Beskær videoen */
 }
 
+/* Selve videoen: fylder hele boksen og beskæres pænt */
 .video {
     width: 100%;
     height: 100%;
@@ -834,7 +854,7 @@ INFO
     cursor: pointer;
 }
 
-/* PLAY-KNAPPEN */
+/* Play-knap i midten af videoen */
 .play-button {
     position: absolute;
     top: 50%;
@@ -850,6 +870,7 @@ INFO
     justify-content: center;
 }
 
+/* Play-ikonets trekant inde i knappen */
 .play-button::before {
     content: "";
     border-style: solid;
@@ -862,6 +883,7 @@ INFO
    ------------------------------ */
 /* map */
 
+/* Overskrift over kortet: centreret tekst med top-padding */
 #info-map {
     display: flex;
     justify-content: center;
@@ -869,12 +891,14 @@ INFO
     color: rgb(0, 56, 168);
 }
 
+/* Wrapper omkring kortet: centrerer Leaflet-kortet på siden */
 .map-wrapper {
     display: flex;
     justify-content: center;
     padding-top: 75px;
 }
 
+/* Selve kortet: højde, bredde og afrundede hjørner */
 #map {
     height: 500px;
     width: 60%; /* ← ændret fra 80% til 60% */
@@ -883,7 +907,7 @@ INFO
     overflow: hidden;
 }
 
-/* titel */
+/* Overskrift over uddannelses-sektionen */
 #info-title {
     display: flex;
     justify-content: center;
@@ -891,7 +915,8 @@ INFO
     color: rgb(0, 56, 168);
 }
 
-/* overskrift */
+
+/* Region-overskrifter (f.eks. “UDANNELSER PÅ SJÆLLAND”) */
 .educationlocation {
     margin: 0 auto;
     padding: 25px 30px;
@@ -899,6 +924,7 @@ INFO
     color: rgb(0, 56, 168);
 }
 
+/* Wrapper for alle skolebokse i et område */
 .education-container {
     max-width: 1500px;
     margin: 0 auto;
@@ -922,6 +948,7 @@ INFO
 }
 
 
+/* Enkelt skoleboks: layout, baggrund og position til liste */
 .square-wrapper {
     display: flex;
     flex-direction: column;
@@ -936,6 +963,7 @@ INFO
     position: relative;
 }
 
+/* Logo inde i skoleboksen: max-størrelse og luft omkring */
 .education-logo img {
     display: flex;
     align-items: center;
@@ -944,6 +972,7 @@ INFO
     margin: 40px 20px;
 }
 
+/* Liste over uddannelser inde i boksen: placeret fast under logo */
 .uddannelser-liste {
     position: absolute;
     top: 135px;
@@ -955,6 +984,7 @@ INFO
     padding-left: 16px;
 }
 
+/* Listepunkter for uddannelser: linjeafstand og lidt ekstra padding*/
 .uddannelser-liste li {
     line-height: 1.5;
     padding: 2px;
@@ -964,16 +994,19 @@ INFO
    OPSLAGSTAVLE
    ------------------------------ */
 
+/* Wrapper for hele opslagstavle-indholdet */
 .messageboard-content {
     margin-top: 40px;
 }
 
+/* Overskriften “OPSLAGSTAVLEN” centreres og farves blå */
 .messageboard-title {
     display: flex;
     justify-content: center;
     color: rgb(0, 56, 168);
 }
 
+/* Introteksten under titel: centreret, lille og kursiv */
 .messageboard-text {
     display: flex;
     justify-content: center;
@@ -983,6 +1016,7 @@ INFO
     font-weight: lighter;
 }
 
+/* Wrapper der centrerer selve opslagstavlen på siden */
 .messageboard-all {
     margin-bottom: 80px;
     display: flex;
@@ -990,6 +1024,7 @@ INFO
     align-items: center;
 }
 
+/* Baggrunden for opslagstavlen: stort board med baggrundsbillede */
 .messageboard {
     min-width: 1400px;
     min-height: 900px;
@@ -1157,12 +1192,6 @@ INFO
     width: 250px;
 }
 
-
-
-
-
-
-
 /* ------------------------------
    FOOTER
    ------------------------------ */
@@ -1176,8 +1205,7 @@ INFO
 
 /* ---------------- NEWSLETTER ---------------- */
 
-
-/*-------------*/
+/* Sektion med nyhedsbrev: to kolonner ved siden af hinanden */
 .newsletter-section {
     display: flex;
     justify-content: space-between;
@@ -1185,31 +1213,31 @@ INFO
     background-color: #fcebf9;
 }
 
-/*-------------*/
+/* Tekstkolonnen i nyhedsbrevet: begrænset bredde og stor margin */
 .newsletter-text {
     max-width: 600px;
     margin: 80px;
 }
 
-/*-------------*/
+/* Overskrift for nyhedsbrev: blå og med luft under */
 .newsletter-text h2 {
     color: rgb(0, 56, 168);
     margin-bottom: 20px;
 }
 
-/*-------------*/
+/* Fremhævet introduktionstekst i nyhedsbrev */
 .newsletter-text strong {
     display: block;
     font-size: 17px;
     margin-bottom: 15px;
 }
 
-/*-------------*/
+/* Links i nyhedsbrevsteksten farves blå */
 .newsletter-text a {
     color: rgb(0, 56, 168);
 }
 
-/*-------------*/
+/* Formularboks til nyhedsbrev */
 .newsletter-form {
     background: #fafafa;
     margin: 80px;
@@ -1222,7 +1250,7 @@ INFO
     border: 1px solid #ececec;
 }
 
-/*-------------*/
+/* Inputfelter i nyhedsbrev: afrundede og med polstring */
 .newsletter-form input {
     padding: 15px;
     border-radius: 30px;
@@ -1230,7 +1258,7 @@ INFO
     font-size: 14px;
 }
 
-/*-------------*/
+/* Nyhedsbrevsknappen:*/
 .newsletter-form button {
     padding: 15px;
     border: none;
@@ -1244,7 +1272,7 @@ INFO
 
 /* ---------------- COLUMNS ---------------- */
 
-/*-------------*/
+/* Firekolonne-grid for footer-links */
 .footer-columns {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1253,13 +1281,13 @@ INFO
     color: #fcebf9;
 }
 
-/*-------------*/
+/* Footer-overskrifter */
 .footer-col h3 {
     margin: 40px;
     color: #fcebf9;
 }
 
-/*-------------*/
+/* Footerlinks*/
 .footer-col a {
     color: white;
     margin-left: 40px;
@@ -1268,25 +1296,25 @@ INFO
     display: block;
 }
 
-/*-------------*/
+/* Hover på links*/
 .footer-col a:hover {
     text-decoration: underline;
 }
 
-/*-------------*/
+/* Almindelig tekst */
 .footer-col p {
     margin-left: 40px;
     margin-bottom: 20px;
 }
 
-/* Logo section */
+/* Logoet i footer */
 .footer-logo {
     width: 150px;
     margin-left: 40px;
     margin-bottom: 20px;
 }
 
-/* Divider line */
+/* Vandret linje til opdeling mellem sektioner */
 hr {
     border: none;
     border-top: 1px solid #e5e5e5;
