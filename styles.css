@@ -675,14 +675,14 @@ INFO
 /* Lodret linje i midten af tidslinjen */
 
 .timeline::before {
-    content: ""; /** Required for pseudo-element */
-    position: absolute; /** Positions element relative */
+    content: "";  /* Gør pseudo-elementet synligt (uden content vises det ikke). Et pseudo-element er: element CSS selv opretter, uden at det findes i din HTML. */
+    position: absolute; /** Gør det muligt at placere elementet frit ift. .timeline*/
     top: 0;
-    bottom: 0; /** Stretch full height */
-    left: 50%; /** Center horizontally */
-    width: 5px; /** Line thickness */
+    bottom: 0; /* Strækker linjen fra toppen til bunden af containeren  */
+    left: 50%; /* Placérer elementets venstre kant midt i containeren */
+    width: 5px; /* Tykkelsen på tidslinjens midterlinje */
     background: rgba(217, 221, 255);
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Flytter linjen halvdelen af sin egen bredde mod venstre, så den bliver perfekt centreret */
 }
 
 /* Hvert timeline-element: halvdelen af bredden og med padding omkring indhold */
@@ -690,7 +690,7 @@ INFO
     align-items: flex-start;
     width: 50%;
     padding: 25px 45px;
-    position: relative; /** Needed for positioning the circle */
+    position: relative;
 }
 
 /* Ulige timeline-elementer placeres til venstre */
@@ -707,28 +707,27 @@ INFO
 .timeline-img {
     width: 140px;
     border-radius: 10px;
-    flex-shrink: 0; /** Prevents distortion */
+    flex-shrink: 0; /* Forhindrer billedet i at krympe ved andre layout */
     padding-bottom: 10px;
 }
 
 /* Den runde markør ved hvert timeline-punkt */
 .timeline li::before {
-    content: ""; /** Makes pseudo-element visible */
-    position: absolute; /** Absolute inside <li> */
+    content: ""; /* Gør pseudo-elementet synligt */
+    position: absolute; /* Placér cirklen frit inde i <li>-elementet */
     top: 28px;
     width: 22px;
     height: 22px;
     background: rgb(0, 56, 168);
-    border: 4px solid rgb(0, 56, 168); /** Blue outline */
+    border: 4px solid rgb(0, 56, 168);
     border-radius: 50%;
-    z-index: 10; /** Above background */
-    left: calc(100% - 10px); /** Near center line */
-    transform: translateX(-50%); /** Center alignment */
+    left: calc(100% - 10px); /* Placérer cirklens venstre kant tæt på midterlinjen */
+    transform: translateX(-50%); /* Flytter cirklen halvdelen af sin egen bredde mod venstre, så den rammer midterlinjen præcis*/
 }
 
 /* Justerer markørens placering for højresiden */
 .timeline li:nth-child(even)::before {
-    left: -10px; /** Moves dot to match right-side items */
+    left: -10px;
 }
 
 /* Tekstbokse med brødtekst i tidslinjen */
@@ -756,7 +755,7 @@ INFO
 
 /* Små tekstfelter (<small>) får samme bokslay-out som brødtekst */
 .timeline li small {
-    display: inline-block; /** Inline-block for padding */
+    display: inline-block; /** gør at det kan stå ved siden af andre elementer */
     background: rgba(217, 221, 255);
     padding: 18px 22px;
     border-radius: 10px;
@@ -767,7 +766,7 @@ INFO
 
 /* Tidslinjetitel per person: mørkeblå label med caps og fremhævning */
 .timeline li .title {
-    display: inline-block; /** Fit-to-content box */
+    display: inline-block; /* gør at det kan stå ved siden af andre elementer */
     background: rgb(0, 56, 168);
     color: rgba(217, 221, 255);
     padding: 20px 18px;
@@ -791,7 +790,7 @@ INFO
     width: 110px;
     height: auto;
     border-radius: 10px;
-    flex-shrink: 0; /** Prevents deformation */
+    flex-shrink: 0; /* Gør at elementet IKKE må krympe */
 }
 
 
