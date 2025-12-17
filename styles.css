@@ -795,25 +795,24 @@ INFO
 
 
 /*-----------------------
- Rollemodeller + videoer
+videoer
  ------------------------*/
 
 /*------Rollemodeller + videoer-------*/
 .women-in-IT {
-    padding: 60px;
-    background: #e8e8ff;
+    background: #e8e8ff; /*baggrundsfarve*/
 }
 
-/* Videorækker: centrerer og giver afstand mellem video-cards */
+/* Videorækker: centrerer og giver afstand mellem videoerne */
 .video-students-container,
 .video-workers-container {
-    display: flex;
+    display: flex; /*aktivere flex*/
     justify-content: center;
     gap: 60px;
     padding: 60px;
 }
 
-/* Overskrift for rollemodel- og videosektionen */
+/*Overskrift "mød studerende på IT, og kvinder på arbejdsmarked"*/
 .women-in-IT h2 {
     text-align: center;
     font-size: 28px;
@@ -821,7 +820,7 @@ INFO
     font-style: italic;
     font-weight: 500;
 }
-/* Underoverskrifter (fx jobtitel) i videosektion */
+/*Underoverskrift der beskriver hvilken uddannelse og hvilket arbejde*/
 .women-in-IT h3 {
     font-size: 20px;
     font-weight: 500;
@@ -884,15 +883,15 @@ INFO
 
 /* Overskrift over kortet: centreret tekst med top-padding */
 #info-map {
-    display: flex;
-    justify-content: center;
-    padding-top: 45px;
-    color: rgb(0, 56, 168);
+    display: flex; /* aktivere flex */
+    justify-content: center; /* Centrerer kortet vandret */
+    padding-top: 45px; /* Giver luft over kortet */
+    color: rgb(0, 56, 168); /*tekstfarven (blå)*/
 }
 
 /* Wrapper omkring kortet: centrerer Leaflet-kortet på siden */
 .map-wrapper {
-    display: flex;
+    display: flex; /*aktivere flex*/
     justify-content: center;
     padding-top: 75px;
 }
@@ -900,8 +899,8 @@ INFO
 /* Selve kortet: højde, bredde og afrundede hjørner */
 #map {
     height: 500px;
-    width: 60%; /* ← ændret fra 80% til 60% */
-    max-width: 900px; /* ← optional: så det ikke bliver gigantisk på store skærme */
+    width: 60%;
+    max-width: 900px;
     border-radius: 15px;
     overflow: hidden;
 }
