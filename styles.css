@@ -35,7 +35,7 @@ h1.logo a {
 
 /* logo-billedet */
 .logo-img {
-    width: 60px;
+    max-width: 60px;
     height: auto;
 }
 
@@ -143,7 +143,7 @@ nav ul li a.active {
     align-items: center;
     border-radius: 50%;
     height: 120px;
-    width: 120px;
+    max-width: 120px;
     padding: 150px;
     background-color: #fcebf9;;
     color: rgb(239, 112, 166);
@@ -173,7 +173,7 @@ nav ul li a.active {
     align-items: center;
     border-radius: 50%;
     height: 120px;
-    width: 120px;
+    max-width: 120px;
     padding: 150px;
     border-radius: 50%;
     background-color: #fcebf9;;
@@ -183,7 +183,7 @@ nav ul li a.active {
 
 /* boble-1 */
 .circle-container-frontpage1 {
-    width: 150px;
+    max-width: 150px;
     height: 150px;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, #fcebf9, rgb(248, 230, 237));
@@ -192,7 +192,7 @@ nav ul li a.active {
 
 /* boble-2 */
 .circle-container-frontpage2 {
-    width: 150px;
+    max-width: 150px;
     height: 150px;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, #fcebf9, rgb(248, 230, 237));
@@ -654,6 +654,7 @@ INFO
 /* ------------------------------
    TIMELINE
    ------------------------------ */
+/* Kildehenvisning: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline */
 
 /* Wrapper for hele tidslinjen: centrerer og begrænser maks bredde */
 .timeline-wrapper {
